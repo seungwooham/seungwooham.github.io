@@ -1,8 +1,10 @@
 ---
 title: "Microscopic Traffic Hysteresis in Traffic Oscillations: A Behavioral Perspective"
 date: 2020-03-12
-categories: Transportation
-tags: English
+categories: 
+  - Transportation
+tags:
+  - English
 ---
 ## Microscopic Traffic Hysteresis in Traffic Oscillations: A Behavioral Perspective
 ### Author: Danjue Chen, Jorge A.Laval, Soyoung Ahn, Zuduo Zheng

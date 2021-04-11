@@ -1,8 +1,10 @@
 ---
 title: "돈 좀 굴려봅시다 Summary and Review Part 1"
 date: 2020-05-07
-categories: "Finance"
-tags : 한글
+categories:
+  - Finance
+tags:
+  - 한글
 ---
 ## 돈 좀 굴려봅시다 Summary and Review Part 1
 

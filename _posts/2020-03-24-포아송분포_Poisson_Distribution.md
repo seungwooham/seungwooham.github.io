@@ -1,8 +1,10 @@
 ---
 title: "포아송분포 (Poisson Distribution)"
 date: 2020-03-24
-categories: "Machine Learning"
-tags : 한글
+categories:
+  - Machine Learning
+tags:
+  - 한글
 ---
 ### 포아송분포 (Poisson Distribution)
 

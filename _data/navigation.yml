@@ -2,9 +2,9 @@
 main:
   - title: "All Posts"
     url: /year-archive/
-  - title: "Posts on Korean"
+  - title: "Sort Posts by Category"
     url: /categories/
-  - title: "Posts on English"
+  - title: "Sort Posts by Tag (Language)"
     url: /tags/
   - title: "CV"
     url: /cv/
