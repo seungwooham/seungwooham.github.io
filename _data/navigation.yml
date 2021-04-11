@@ -1,7 +1,13 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  - title: "All Posts"
+    url: /year-archive/
+  - title: "Posts on Korean"
+    url: /categories/
+  - title: "Posts on English"
+    url: /tags/
+  - title: "CV"
+    url: /cv/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
