@@ -1,7 +1,7 @@
 ---
 title: "적률생성함수 (Moment Generating Function)"
 date: 2020-03-27
-categories: Machine Learning
+categories: "Machine Learning"
 tags : 한글
 ---
 ### 적률생성함수 (Moment Generating Function)

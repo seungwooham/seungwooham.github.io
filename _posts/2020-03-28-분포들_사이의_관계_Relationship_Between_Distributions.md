@@ -1,7 +1,7 @@
 ---
 title: "분포들 사이의 관계 1 (Relationship Between Distributions 1)"
 date: 2020-03-28
-categories: Machine Learning
+categories: "Machine Learning"
 tags : 한글
 ---
 ### 분포들 사이의 관계 1 (Relationship Between Distributions 1)

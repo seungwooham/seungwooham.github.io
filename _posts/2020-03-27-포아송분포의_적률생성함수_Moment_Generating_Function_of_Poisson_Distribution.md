@@ -1,7 +1,7 @@
 ---
 title: "포아송분포의 적률생성함수 (Moment Generating Function of Poisson Distribution)"
 date: 2020-03-27
-categories: Machine Learning
+categories: "Machine Learning"
 tags : 한글
 ---
 ### 포아송분포의 적률생성함수 (Moment Generating Function of Poisson Distribution)

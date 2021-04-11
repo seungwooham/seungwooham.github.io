@@ -1,5 +1,5 @@
 ---
-title: "Posts on Korean (Sorted by Category)"
+title: "Posts Sorted by Category"
 layout: categories
 permalink: /categories/
 author_profile: true

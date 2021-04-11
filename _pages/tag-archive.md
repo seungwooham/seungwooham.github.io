@@ -1,5 +1,5 @@
 ---
-title: "Posts on English (Sorted by Tag)"
+title: "Posts Sorted by Tag (Language)"
 permalink: /tags/
 layout: tags
 author_profile: true

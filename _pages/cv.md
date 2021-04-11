@@ -1,5 +1,5 @@
 ---
-title: "Seung Woo Steve Ham's CV"
+title: "Curriculum Vitae"
 permalink: /cv/
 author_profile: true
 header:
