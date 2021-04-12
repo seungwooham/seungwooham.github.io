@@ -1,0 +1,1 @@
+오늘은 Pytorch 코드를 작성하다보면 마주치게 되는 einsum에 대한 간단한 소개를 해보려합니다. Einsum은 numpy, torch, tensorflow 다양한 종류의 연산에 대해서 동일한 형태로 표현할 수 있다는 장점이 있습니다. 심지어 2020년 말의 업데이트를 통해서 pytorch, numpy 안의 built-in function에 비해서 더 빠른 연산 속도를 제공합니다. [https://github.com/pytorch/pytorch/issues/32591] (관련 pytorch issue) 하지만

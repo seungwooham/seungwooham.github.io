@@ -5,193 +5,86 @@ author_profile: true
 header:
   image: "/assets/images/cv_20200309.jpg"
 ---
-1.
 
-# Isaac Newton
-Physicist, Mathematician, Cambridge professor.
-
-<div id="webaddress">
-<a href="isaac@applesdofall.org">isaac@applesdofall.org</a>
-| <a href="http://en.wikipedia.org/wiki/Isaac_Newton">My wikipedia page</a>
-</div>
+<div style="text-align:center"><img src="/assets/images/cv_profile.jpg"/></div>
 
 
-## Currently
-
-Standing on the shoulders of giants
-
-### Specialized in
-
-Laws of motion, gravitation, minting coins, disliking [Robert Hooke](http://en.wikipedia.org/wiki/Robert_Hooke)
+# Seung Woo Steve Ham
 
 
-### Research interests
+## EDUCATION
+2018-
+:   **Ph. D. Candidate**
+    Seoul National University, Dept. Of Civil and Environmental Engineering, Transportation Laboratory Researcher
 
-Cooling, power series, optics, alchemy, planetary motions, apples.
+2014-2018
+:   **B. S.**
+    Major: Seoul National University Dept. Of Civil and Environmental Eng. 
+    Minor: Seoul National University Dept. Of Industrial Engineering 
 
-
-## Education
-
-`1654-1660`
-__The King's School, Grantham.__
-
-`June 1661 - now`
-__Trinity College, Cambridge__
-
-- Sizar
-
-`1667 - death`
-__Trinity College, Cambridge__
-
-- Fellow
+2011-2014
+:   **High School Education**
+    Gyeonggi Science High School For Gifted
 
 
+## WORK EXPERIENCE
+2020-
+:   **Movv**
+    Model development for region based recommendations
 
-## Awards
+2018-
+:   **DEER Corporation**
+    Collaboration on data-driven business decision projects
 
-`2012`
-President, *Royal Society*, London, UK
+2016-2017
+:   **BMW Technology Scout**
+    Suggest the guide on investment to BMW Korea R&D Center
+    *442 technology suggestion for 14 months*
 
-Associate, *French Academy of Science*, Paris, France
+2016 
+:   **Washington University in St. Louis Research Assistant**
+    Research Assistant at Environmental Nanochemistry Lab
+    **Research Subject: Mobility of Clay Minerals Under Geologic CO2 Sequestration Conditions*
 
-
-
-## Publications
-
-<!-- A list is also available [online](http://scholar.google.co.uk/citations?user=LTOTl0YAAAAJ) -->
-
-### Journals
-
-`1669`
-Newton Sir I, De analysi per æquationes numero terminorum infinitas. 
-
-`1669`
-Lectiones opticæ.
-
-etc. etc. etc.
-
-### Patents
-
-`2012`
-Infinitesimal calculus for solutions to physics problems, [SMBC](http://www.techdirt.com/articles/20121011/09312820678/if-patents-had-been-around-time-newton.shtml) patent 001
+2014
+:   **Seoul National University Undergraduate Intern**
+    Intern at Climate Change Adaptation in Water Resources Lab
+    *Literature review on climate simulation analysis*
 
 
-## Occupation
+## AWARDS
+2017	
+:   **The National Academy of Engineering of Korea Young Engineer Award Winner**
+    Six winners selected to develop engineering technology talent 
+	*Youngest winner at 2017*
 
-`1600`
-__Royal Mint__, London
-
-- Warden
-- Minted coins
-
-`1600`
-__Lucasian professor of Mathematics__, Cambridge University
+2016
+:   **Global Entrepreneurship Challenge Winner**
+    Smoophing: Find Stuff That You Desire to Buy
+    *Image based shopping system UI presentation*
+    *Competition hosted by The World Engineering Education Forum & The Global Engineering Deans Council (WEEF/GEDC)*
 
 
+## SCHOLARSHIP
+2020
+:   **Paan Scholarship Cultural Foundation**
 
-<!-- ### Footer
+2014-2017	
+:   **Presidential Scholar of the Republic of Korea**
+    Full support for tuition and academic incentives
 
-Last updated: May 2013 -->
 
-2.
+## RESEARCH PAPERS
+2020
+:   **Investigating the Influential Factors for Practical Application of Multi-Class Vehicle Detection for Images from Unmanned Aerial Vehicle using Deep Learning Models**
+    Keywords : UAV, Vehicle Detection, Deep Learning
+    [Link to the Paper](https://journals.sagepub.com/doi/full/10.1177/0361198120954187)
 
-Johnny Coder
-============
+2019
+:   **Extracting vehicle trajectories using unmanned aerial vehicles in congested traffic conditions**
+    Keywords : UAV, Vehicle Trajectory, Congested Traffic Condition
+    [Link to the Paper](https://www.hindawi.com/journals/jat/2019/9060797/)
 
 ----
 
->  In this style, the resume starts with a blockquote, where
->  you can briefly list your specialties, or include a salient
->  quote. Ending a line with a backslash forces a line break.
-
-----
-
-Education
----------
-
-2010-2014 (expected)
-:   **PhD, Computer Science**; Awesome University (MyTown)
-
-    *Thesis title: Deep Learning Approaches to the Self-Awesomeness
-     Estimation Problem*
-
-2007-2010
-:   **BSc, Computer Science and Electrical Engineering**; University of
-    HomeTown (HomeTown)
-
-    *Minor: Awesomeology*
-
-Experience
-----------
-
-**Your Most Recent Work Experience:**
-
-Short text containing the type of work done, results obtained,
-lessons learned and other remarks. Can also include lists and
-links:
-
-* First item
-
-* Item with [link](http://www.example.com). Links will work both in
-  the html and pdf versions.
-
-**That Other Job You Had**
-
-Also with a short description.
-
-Technical Experience
---------------------
-
-My Cool Side Project
-:   For items which don't have a clear time ordering, a definition
-    list can be used to have named items.
-
-    * These items can also contain lists, but you need to mind the
-      indentation levels in the markdown source.
-    * Second item.
-
-Open Source
-:   List open source contributions here, perhaps placing emphasis on
-    the project names, for example the **Linux Kernel**, where you
-    implemented multithreading over a long weekend, or **node.js**
-    (with [link](http://nodejs.org)) which was actually totally
-    your idea...
-
-Programming Languages
-:   **first-lang:** Here, we have an itemization, where we only want
-    to add descriptions to the first few items, but still want to
-    mention some others together at the end. A format that works well
-    here is a description list where the first few items have their
-    first word emphasized, and the last item contains the final few
-    emphasized terms. Notice the reasonably nice page break in the pdf
-    version, which wouldn't happen if we generated the pdf via html.
-
-:   **second-lang:** Description of your experience with second-lang,
-    perhaps again including a [link] [ref], this time placing the url
-    reference elsewhere in the document to reduce clutter (see source
-    file). 
-
-:   **obscure-but-impressive-lang:** We both know this one's pushing
-    it.
-
-:   Basic knowledge of **C**, **x86 assembly**, **forth**, **Common Lisp**
-
-[ref]: https://github.com/githubuser/superlongprojectname
-
-Extra Section, Call it Whatever You Want
-----------------------------------------
-
-* Human Languages:
-
-     * English (native speaker)
-     * ???
-     * This is what a nested list looks like.
-
-* Random tidbit
-
-* Other sort of impressive-sounding thing you did
-
-----
-
-> <email@example.com> • +00 (0)00 000 0000 • XX years old\
-> address - Mytown, Mycountry
+> <seungwoo.ham@snu.ac.kr>

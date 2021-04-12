@@ -2,9 +2,9 @@
 main:
   - title: "All Posts"
     url: /year-archive/
-  - title: "Sort Posts by Category"
+  - title: "Posts by Category"
     url: /categories/
-  - title: "Sort Posts by Tag (Language)"
+  - title: "Posts by Language"
     url: /tags/
   - title: "CV"
     url: /cv/
