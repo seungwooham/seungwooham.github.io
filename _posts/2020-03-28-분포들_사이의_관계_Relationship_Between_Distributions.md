@@ -5,6 +5,8 @@ categories:
   - Machine Learning
 tags:
   - 한글
+header:
+  teaser: "/assets/images/2020-03-28-RBD1_1.png"
 ---
 ### 분포들 사이의 관계 1 (Relationship Between Distributions 1)
 

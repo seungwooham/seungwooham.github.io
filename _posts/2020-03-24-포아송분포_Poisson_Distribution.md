@@ -5,6 +5,8 @@ categories:
   - Machine Learning
 tags:
   - 한글
+header:
+  teaser: "/assets/images/2020-03-24-PD1.png"
 ---
 ### 포아송분포 (Poisson Distribution)
 

@@ -3,6 +3,7 @@ title: "Curriculum Vitae"
 permalink: /cv/
 author_profile: true
 header:
+  teaser: "/assets/images/cv_20200309.jpg"
   image: "/assets/images/cv_20200309.jpg"
 ---
 
