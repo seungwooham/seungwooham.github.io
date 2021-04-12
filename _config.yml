@@ -281,8 +281,6 @@ defaults:
       share: true
       related: true
       classes: wide
-    header:
-      image: "/assets/images/banner_20200309.jpg"
   # _pages
   - scope:
       path: ""
@@ -291,5 +289,3 @@ defaults:
       layout: single
       author_profile: true
       classes: wide
-    header:
-      image: "/assets/images/banner_20200309.jpg"
