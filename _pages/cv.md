@@ -6,7 +6,7 @@ header:
   image: "/assets/images/cv_20200309.jpg"
 ---
 
-<div style="text-align:center"><img src="/assets/images/cv_profile.jpg" width="500"/></div>
+<div style="text-align:center"><img src="/assets/images/cv_profile.jpg" width="350" style="margin: 10px 10px 10px 10px;"/></div>
 
 # Seung Woo Steve Ham
 
