@@ -66,5 +66,5 @@ The procedure for numerical simulation is presented in the figure above. Driver 
 ### Reference
 Chen, Danjue, Jorge A. Laval, Soyoung Ahn, and Zuduo Zheng. "Microscopic traffic hysteresis in traffic oscillations: A behavioral perspective." Transportation Research Part B: Methodological 46, no. 10 (2012): 1440-1453.
 
-<script type="text/javascript" async
-src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+<!-- <script type="text/javascript" async
+src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> -->
