@@ -59,6 +59,3 @@ $$f(x)=\frac{\lambda^x}{x!}e^{-\lambda} \qquad x=0, 1, 2, \cdots$$
 
 ### 출처
 김우철. 수리통계학 = Mathematical Statistics / 김우철 지음, 2012.
-
-<!-- <script type="text/javascript" async
-src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> -->
