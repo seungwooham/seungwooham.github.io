@@ -6,10 +6,9 @@ header:
   image: "/assets/images/cv_20200309.jpg"
 ---
 
-<div style="text-align:center"><img src="/assets/images/cv_profile.jpg" width="350" style="margin: 10px 10px 10px 10px;"/></div>
+<div style="text-align:center"><img src="/assets/images/cv_profile.jpg" width="350" style="margin: 15px 15px 15px 15px;"/></div>
 
-# Seung Woo Steve Ham
-
+<center> <h1># Seung Woo Steve Ham</h1> </center>
 
 ## EDUCATION
 2018-
