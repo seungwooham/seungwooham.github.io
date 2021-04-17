@@ -59,10 +59,11 @@ Einsum의 규칙으로 크게 네 가지를 제시할 수 있습니다.
   > ex) M = np.einsum('ik,kj->ij', A, B)<br/>
   > free index: k
 3. Index가 생략되는 경우, 이 때는 해당 index를 기준으로 합이 이루어짐을 의미합니다. 
-  > ex) sum = np.einsum('i->', x)
-    - summation index(axis): i
+  > ex) sum = np.einsum('i->', x)<br/>
+  > summation index(axis): i
 4. 연산이 이루어지지 않는 축은 어떤 순서로 transpose해도 무방합니다.
   > ex) reorder_axis = np.einsum('ijk->kji', x)
+
 
 그럼 이제 예시들을 보며 마무리 해봅시다.
 ```python
