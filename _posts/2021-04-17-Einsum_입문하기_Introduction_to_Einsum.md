@@ -52,9 +52,9 @@ Einsum의 규칙으로 크게 네 가지를 제시할 수 있습니다.
 
 1. 화살표 왼쪽에는 연산 대상의 index, 화살 오른쪽에는 연산 결과물의 index가 옵니다. 작은 따옴표(') 구문이 끝난 뒤에는 연산 대상을 지시합니다.
   > ex) M = np.einsum('ik,kj->ij', A, B)
-    - 연산 대상의 index: ik, kj
-    - 연산 결과물의 index: ij
-    - 연산 대상: A, B
+  > 연산 대상의 index: ik, kj
+  > 연산 결과물의 index: ij
+  > 연산 대상: A, B
 2. Einsum 표기에서 반복되는 index는 free index로 해당 축에서 행렬 연산이 이루어짐을 의미합니다.
   > ex) M = np.einsum('ik,kj->ij', A, B)
     - free index: k
