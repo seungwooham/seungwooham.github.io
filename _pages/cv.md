@@ -8,7 +8,7 @@ header:
 
 <div style="text-align:center"><img src="/assets/images/cv_profile.jpg" width="350" style="margin: 15px 15px 15px 15px;"/></div>
 
-<center> <h1># Seung Woo Steve Ham</h1> </center>
+<center> <h1>Seung Woo Steve Ham</h1> </center>
 
 ## EDUCATION
 2018-
