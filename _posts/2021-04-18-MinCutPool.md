@@ -17,7 +17,7 @@ $$\begin{aligned}
 \mathbf{S} &= \mathrm{softmax}(\mathrm{MLP}(\bar{\mathbf{X}};\Theta_{\mathrm{MLP}}))
 \end{aligned}$$
 
-$$\bar{\mathbf{X}}$$는 MP(Message passing, 하나의 graph neural layer 층으로 생각하면 됨)들을 통과하여 얻어진 node representation matrix입니다. $$\bar{\mathbf{X}}$$를 multi-layer perceptron(MLP, basic한 인공 신경망)과 softmax에 넣어 cluster assignment $${\mathbf{S}}$$를 얻습니다. 이때 $$\Theta_{\mathrm{GNN}}$$와 $$\Theta_{\mathrm{MLP}}$$는 훈련 가능한 파라미터입니다. $$\mathbf{S}$$는 $$[N \times K]$$ 행렬으로 i번째 행에 node i가 각 cluster에 속할 확률을 담고 있습니다. $$\mathbf{S}$$가 softmax를 통과한 결과물이기 때문에 $$\mathbf{S}$$의 원소 $$\mathbf{s}_{ij}$$는 $$\mathbf{s}_{ij}\in [0,1]$$를 만족합니다. 그리고 $$\mathbf{S}\mathbf{1}_K=\mathbf{1}_N$$가 성립하게됩니다. ($$[N \times K] \times [K \times 1]=[N \times 1]$$, N개의 node, K개의 cluster)
+$$\bar{\mathbf{X}}$$는 MP(Message passing, 하나의 graph neural layer 층으로 생각하면 됨)들을 통과하여 얻어진 node representation matrix입니다. $$\bar{\mathbf{X}}$$를 multi-layer perceptron(MLP, basic한 인공 신경망)과 softmax에 연달아 통과시켜 cluster assignment $${\mathbf{S}}$$를 얻습니다. 이때 $$\Theta_{\mathrm{GNN}}$$와 $$\Theta_{\mathrm{MLP}}$$는 훈련 가능한 파라미터입니다. $$\mathbf{S}$$는 $$[N \times K]$$ 행렬으로 i번째 행에 node i가 각 cluster에 속할 확률을 담고 있습니다. $$\mathbf{S}$$가 softmax를 통과한 결과물이기 때문에 $$\mathbf{S}$$의 원소 $$\mathbf{s}_{ij}$$는 $$\mathbf{s}_{ij}\in [0,1]$$를 만족합니다. 그리고 $$\mathbf{S}\mathbf{1}_K=\mathbf{1}_N$$가 성립하게됩니다. ($$[N \times K] \times [K \times 1]=[N \times 1]$$, N개의 node, K개의 cluster)
 
 $$\begin{aligned}
 \mathbf{X}^{\prime} &= {\mathrm{softmax}(\mathbf{S})}^{\top} \cdot \mathbf{X} \\ 
