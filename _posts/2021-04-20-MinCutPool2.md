@@ -22,7 +22,7 @@ $$\begin{aligned}
 { \left\| \mathbf{A} \right\| }_F = \sqrt{ \sum_{i=1}^{m} \sum_{j=1}^{n} |a_{ij}|^{2} } = \sqrt{ \mathrm{trace}(\mathbf{A} * \mathbf{A}) } = \sqrt { \sum_{i=1}^{min \{ m,n \} } \sigma_{i}^{2} (\mathbf{A}) }
 \end{aligned}$$
 
-이때 $$\sigma_{i}^{\mathbf{A}}$$는 $$ \mathbf{A} $$의 singular value를 의미합니다. 실제 code 작성할 때에는 첫 번째 정의인 $$ \sqrt{ \sum_{i=1}^{m} \sum_{j=1}^{n} |a_{ij}|^{2} } $$를 활용하였습니다. 몇 가지 예시와 함께 결과를 살펴봅시다.
+이때 $$\sigma_{i}^{\mathbf{A}}$$는 $$\mathbf{A}$$의 singular value를 의미합니다. 
 
 ```python
 import numpy as np
@@ -82,7 +82,6 @@ print('극단적인 cluster의 orthogonality loss = {:.4f}'.format(loss(lo1(ext)
 '''
 ```
 
-완벽하게 분배된 cluster의 경우 orthogonality loss가 0이 되는 것을 확인할 수 있습니다. 극단으로 갈수록 loss는 1에 가까워집니다. $${ \left\| \frac{\mathbf{I}_C}{\sqrt{C}} \right\| }_F$$의 값이 1이기 때문에, 앞
 
 
 ### 출처
