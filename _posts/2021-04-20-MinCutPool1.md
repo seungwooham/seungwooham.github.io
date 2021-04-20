@@ -76,8 +76,8 @@ print(np.transpose(c) @ A)
 array([[2, 2, 2, 0, 0, 1, 0, 0, 1],
        [0, 0, 1, 2, 2, 2, 0, 0, 1],
        [0, 0, 1, 0, 0, 1, 2, 2, 2]])
-i번째 행, j 번째 열의 원소는 i 번째 cluster와 j 번째 node 사이의 edge 수를 나타냅니다.
-조금 다르게 생각하면, cluster들이 자신들의 지분이 있는 edge를 챙겨간다고 볼 수도 있습니다.
+- i번째 행, j 번째 열의 원소는 i 번째 cluster와 j 번째 node 사이의 edge 수를 나타냅니다.
+- 조금 다르게 생각하면, cluster들이 자신들의 지분이 있는 edge를 챙겨간다고 볼 수도 있습니다.
 '''
 
 print(np.transpose(c) @ A @ c)
@@ -85,8 +85,9 @@ print(np.transpose(c) @ A @ c)
 array([[6, 1, 1],
        [1, 6, 1],
        [1, 1, 6]])
-i번째 행, j 번째 열의 원소는 i 번째 cluster와 j 번째 cluster 사이의 edge 수를 나타냅니다.
-또 조금 다르게 생각하면 np.transpose(c) @ A에서 챙긴 node별 edge 중, 진짜 자신의 cluster와 연결된 edge만을 가져갑니다.
+- i번째 행, j 번째 열의 원소는 i 번째 cluster와 j 번째 cluster 사이의 edge 수를 나타냅니다.
+- 또 조금 다르게 생각하면 np.transpose(c) @ A에서 챙긴 node별 edge 중, 진짜 자신의 cluster와 
+  연결된 edge만을 가져갑니다.
 '''
 
 print(np.transpose(s) @ A)
@@ -94,9 +95,10 @@ print(np.transpose(s) @ A)
 array([[1.6, 1.6, 1.8, 0.4, 0.4, 1.2, 0. , 0. , 1. ],
        [0.4, 0.4, 1.1, 1.2, 1.2, 1.5, 0.2, 0.2, 1. ],
        [0. , 0. , 0.9, 0. , 0. , 0.9, 1.8, 1.8, 1.8]])
-여섯째 열(node 6)을 기준으로 생각하면, node 6에 연결된 edge 4개를 clsuter red에 1.2개, cluster green에 1.5개, cluster blue에 1.3개 분배했습니다.
-node 6에 edge를 제공하던 node는 3, 4, 5, 9번 입니다.
-그리고 node 3, 4, 5, 9의 cluster별 지분대로 np.transpose(s) @ A 여섯째 열의 원소가 결정됩니다.
+- 여섯째 열(node 6)을 기준으로 생각하면, node 6에 연결된 edge 4개를 clsuter red에 1.2개,
+  cluster green에 1.5개, cluster blue에 0.9개 분배했습니다.
+- node 6에 edge를 제공하던 node는 3, 4, 5, 9번 입니다.
+- 그리고 node 3, 4, 5, 9의 cluster별 지분대로 np.transpose(s) @ A 여섯째 열의 원소가 결정됩니다.
 '''
 
 print(np.transpose(s) @ A @ s)
@@ -104,12 +106,13 @@ print(np.transpose(s) @ A @ s)
 array([[4.4 , 2.3 , 0.9 ],
        [2.3 , 2.86, 1.26],
        [0.9 , 1.26, 4.86]])
-np.transpose(c) @ A @ c와 마찬가지로 i번째 행, j번째 열의 원소는 i번째 cluster가 j번째 cluster와 연결된 edge의 숫자를 나타냅니다.
+- np.transpose(c) @ A @ c와 마찬가지로 i번째 행, j번째 열의 원소는 i번째 cluster가
+  j번째 cluster와 연결된 edge의 숫자를 나타냅니다.
 '''
 
 print(np.trace(np.transpose(s) @ A @ s))
 '''
-따라서 trace를 구하게 되면 i번째 cluster 내부의 edge 수의 합을 구할 수 있습니다.
+- 따라서 trace를 구하게 되면 i번째 cluster 내부의 edge 수의 합을 구할 수 있습니다.
 '''
 ```
 
@@ -123,7 +126,8 @@ print(np.transpose(s) @ D @ s)
 array([[5.44, 2.24, 0.32],
        [2.24, 3.28, 1.68],
        [0.32, 1.68, 6.8 ]])
-정확한 원리까지는 모르겠지만, np.transpose(s) @ A @ s 보다 조금 더 전체적인 연결성을 대변하는 듯 합니다.
+- 정확한 원리까지는 모르겠지만, np.transpose(s) @ A @ s 보다 조금 더
+  전체적인 연결성을 대변하는 듯 합니다.
 '''
 ```
 
