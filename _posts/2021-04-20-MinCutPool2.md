@@ -12,17 +12,7 @@ tags:
 
 지난 1편에서 local minima에 빠지기 쉬운 cut loss를 보안하기 위해 orthogonality loss가 있다는 이야기까지 했습니다. Cut loss가 빠질 수 있는 local minima에는 두 가지가 있었는데, 첫 번째는 모든 node가 모든 cluster에 같은 정도로 속하는 것, 두 번째는 모든 node가 한 cluster에만 속하는 경우였습니다. Orthogonality loss는 이 문제를 해결하기 위해 cluster assignment가 orthogonal 하도록(모든 node가 모든 cluster에 같은 정도로 속하는 경우 해결), 그리고 cluster의 size가 비슷하도록(모든 node가 한 cluster에만 속하는 경우 해결) 유도합니다. 식은 아래와 같이 나타납니다.
 
-<!-- $$\begin{aligned}
-\mathcal{L}_o = {\left\| \frac{\mathbf{S}^{\top} \mathbf{S}} {{\|\mathbf{S}^{\top} \mathbf{S}\|}_F} -\frac{\mathbf{I}_C}{\sqrt{C}} \right\|}_F
-\end{aligned}$$ -->
-
-여기서 아래 첨자 F는 Frobenius norm의 약자로 $${\left\| \mathbf{X} \right\|}_F$$는 $$\mathbf{X}$$의 Frobenius norm이라는 의미입니다. Frobenius norm은 다음과 같이 정의됩니다.
-
-$$\begin{aligned}
-{\left\| \mathbf{A} \right\|}_F = \sqrt{\sum_{i=1}^{m}\sum_{j=1}^{n}|a_{ij}|^{2}} = \sqrt{\mathrm{trace}(\mathbf{A}*\mathbf{A})} = \sqrt{\sum_{i=1}^{min \{ m,n \} } \sigma_{i}^{2}(\mathbf{A})}
-\end{aligned}$$
-
-이때 $$\sigma_{i}^(\mathbf{A})$$는 $$\mathbf{A}$$의 singular value를 의미합니다. 실제 code 작성할 때에는 첫 번째 정의인 $$\sqrt{\sum_{i=1}^{m}\sum_{j=1}^{n}|a_{ij}|^{2}}$$를 활용하였습니다. 몇 가지 예시와 함께 결과를 살펴봅시다.
+--
 
 ```python
 import numpy as np
@@ -82,12 +72,7 @@ print('극단적인 cluster의 orthogonality loss = {:.4f}'.format(loss(lo1(ext)
 '''
 ```
 
-<!-- 완벽하게 분배된 cluster의 경우 orthogonality loss가 0이 되는 것을 확인할 수 있습니다. 극단으로 갈수록 loss는 1에 가까워집니다. $${\left\|\frac{\mathbf{I}_C}{\sqrt{C}}\right\|}_F$$의 값이 1이기 때문에, 앞의 $${\left\| \frac{\mathbf{S}^{\top} \mathbf{S}} {{\|\mathbf{S}^{\top} \mathbf{S}\|}_F}\right\|}_F$$의 원소가 고르게 분포할 수록 loss가 감소하게 됩니다. -->
-
-$$\begin{aligned}
-\mathbf{X}^{\prime} &= {\mathrm{softmax}(\mathbf{S})}^{\top} \cdot \mathbf{X} \\ 
-\mathbf{A}^{\prime} &= {\mathrm{softmax}(\mathbf{S})}^{\top} \cdot \mathbf{A} \cdot \mathrm{softmax}(\mathbf{S})
-\end{aligned}$$
+--
 
 ### 출처
 - Bianchi, Filippo Maria, Daniele Grattarola, and Cesare Alippi. "Spectral clustering with graph neural networks for graph pooling." In International Conference on Machine Learning, pp. 874-883. PMLR, 2020. <br/>
