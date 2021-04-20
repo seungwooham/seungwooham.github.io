@@ -227,6 +227,6 @@ print(-np.trace(np.transpose(s) @ A @ s)/np.trace(np.transpose(s) @ D @ s))
 MP operation 자체가 node feature를 uniform하게 하는 경향이 있어 이런 local minima에 갇힐 위험이 더욱 올라갑니다. 이럴 때를 대비해서 orthogonality loss가 존재합니다. 이 orthogonality loss에 대한 자세한 정보는 다음 글에서 확인해보도록 하겠습니다.
 
 ### 출처
-Bianchi, Filippo Maria, Daniele Grattarola, and Cesare Alippi. "Spectral clustering with graph neural networks for graph pooling." In International Conference on Machine Learning, pp. 874-883. PMLR, 2020. <br/>
-Han, Yufei, and Maurizio Filippone. "Mini-batch spectral clustering." In 2017 International Joint Conference on Neural Networks (IJCNN), pp. 3888-3895. IEEE, 2017. <br/>
-Tian, Fei, Bin Gao, Qing Cui, Enhong Chen, and Tie-Yan Liu. "Learning deep representations for graph clustering." In Proceedings of the AAAI Conference on Artificial Intelligence, vol. 28, no. 1. 2014. <br/>
+- Bianchi, Filippo Maria, Daniele Grattarola, and Cesare Alippi. "Spectral clustering with graph neural networks for graph pooling." In International Conference on Machine Learning, pp. 874-883. PMLR, 2020. <br/>
+- Han, Yufei, and Maurizio Filippone. "Mini-batch spectral clustering." In 2017 International Joint Conference on Neural Networks (IJCNN), pp. 3888-3895. IEEE, 2017. <br/>
+- Tian, Fei, Bin Gao, Qing Cui, Enhong Chen, and Tie-Yan Liu. "Learning deep representations for graph clustering." In Proceedings of the AAAI Conference on Artificial Intelligence, vol. 28, no. 1. 2014. <br/>
