@@ -1,12 +1,12 @@
 ---
-title: "MinCutPool-이론편2 (MinCutPool-Understanding the Theory 2)"
+title: "MinCutPool: 이론편2 (MinCutPool: Understanding the Theory 2)"
 date: 2021-04-20
 categories:
   - Machine Learning
 tags:
   - 한글
 ---
-### MinCutPool-이론편2 (MinCutPool-Understanding the Theory 2)
+### MinCutPool: 이론편2 (MinCutPool: Understanding the Theory 2)
 
 이론편1은 [여기](<https://seungwooham.github.io/machine%20learning/MinCutPool1/>)에서 확인하실 수 있습니다.
 
