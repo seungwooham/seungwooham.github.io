@@ -82,7 +82,7 @@ print('극단적인 cluster의 orthogonality loss = {:.4f}'.format(loss(lo1(ext)
 '''
 ```
 
-완벽하게 분배된 cluster의 경우 orthogonality loss가 0이 되는 것을 확인할 수 있습니다. 극단으로 갈수록 loss는 1에 가까워집니다. $${\left\|\frac{\mathbf{I}_C}{\sqrt{C}}\right\|}_F$$의 값이 1이기 때문에, 앞의 $${\left\| \frac{\mathbf{S}^{\top} \mathbf{S}} {{\|\mathbf{S}^{\top} \mathbf{S}\|}_F}\right\|}_F$$의 원소가 고르게 분포할 수록 loss가 감소하게 됩니다.
+<!-- 완벽하게 분배된 cluster의 경우 orthogonality loss가 0이 되는 것을 확인할 수 있습니다. 극단으로 갈수록 loss는 1에 가까워집니다. $${\left\|\frac{\mathbf{I}_C}{\sqrt{C}}\right\|}_F$$의 값이 1이기 때문에, 앞의 $${\left\| \frac{\mathbf{S}^{\top} \mathbf{S}} {{\|\mathbf{S}^{\top} \mathbf{S}\|}_F}\right\|}_F$$의 원소가 고르게 분포할 수록 loss가 감소하게 됩니다. -->
 
 $$\begin{aligned}
 \mathbf{X}^{\prime} &= {\mathrm{softmax}(\mathbf{S})}^{\top} \cdot \mathbf{X} \\ 
