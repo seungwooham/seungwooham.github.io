@@ -37,7 +37,7 @@ $$\begin{aligned}
 \mathcal{L}_c = - \frac{\mathrm{Tr}(\mathbf{S}^{\top} \mathbf{A} \mathbf{S})} {\mathrm{Tr}(\mathbf{S}^{\top} \mathbf{D} \mathbf{S})}
 \end{aligned}$$
 
-$$\mathcal{L}_c$$는 'cluster 내부의 연결성/graph 전체의 연결성'으로, cluster 내부가 전체적인 graph의 연결성과 비교해서 얼마나 끈끈히 연결되어 있는지 알려줍니다. $$\mathrm{Tr}(\mathbf{S}^{\top} \mathbf{A} \mathbf{S})$$이 cluster 내부의 연결성, $$\mathrm{Tr}(\mathbf{S}^{\top} \mathbf{D} \mathbf{S})$$가 graph 전체의 연결성을 나타냅니다. 예시 code와 함께 살펴봅시다.
+$$\mathcal{L}_c$$는 'cluster 내부의 연결성/graph 전체의 연결성'으로, cluster 내부가 전체적인 graph의 연결성과 비교해서 얼마나 끈끈히 연결되어 있는지 알려줍니다. $$\mathrm{Tr}(\mathbf{S}^{\top} \mathbf{A} \mathbf{S})$$이 cluster 내부의 연결성, $$\mathrm{Tr}(\mathbf{S}^{\top} \mathbf{D} \mathbf{S})$$가 graph 전체의 연결성을 나타냅니다. $$\mathbf{D}$$는 $$\mathbf{A}}$$의 degree matrix입니다. 예시 code와 함께 살펴봅시다. 
 
 ```python
 import numpy as np
