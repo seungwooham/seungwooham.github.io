@@ -84,6 +84,16 @@ print('극단적인 cluster의 orthogonality loss = {:.4f}'.format(loss(lo1(ext)
 
 완벽하게 분배된 cluster의 경우 orthogonality loss가 0이 되는 것을 확인할 수 있습니다. Cluster assignment가 오차 범위를 넘어 극단으로 갈수록 loss는 1에 가까워집니다. $$\frac{\mathbf{I}_C}{\sqrt{C}}$$은 모든 원소의 값이 $$1/\sqrt{C}$$이고 Frobenius norm이 1입니다. $$\frac{\mathbf{S}^{\top} \mathbf{S}}{ { \| \mathbf{S}^{\top} \mathbf{S} \| }_F }$$ 또한 Frobenius norm이 1이므로, 원소가 최대한 균등하게 퍼져있으면서(cluster에 속한 node수가 유사함) 동시에 대각성분에만 집중되어있는 것(cluster가 서로 orthogonal함)이 orthogonality loss를 줄일 수 있습니다.
 
+전통적인 spectral clustering(SC) 방법론은 매 sample마다 spectral decomposition을 진행해야 했습니다. MinCutPool에서는 cluster assignment가 인공 신경망에 의해 계산됩니다. 인공 신경망은 node feature space에서 cluster assignment space로 mapping하는 함수 역할을 합니다. 인공 신경망의 파라미터가 graph의 크기에 독립이고, GNN의 message passing(MP) operation이 node space에서만 작동하므로(Laplacian의 spectrum과 무관) MinCutPool은 여러 graph에 일반적으로 적용될 수 있습니다. 이 때문에 작은 규모의 graph에서 훈련을 하고 큰 graph에서 cluster하는 방법도 가능합니다. (방금 두 문장은 아직 이해하지 못했습니다.)
+
+지금까지는 loss에 대한 이해였습니다. Cut loss와 orthogonality loss의 조합은 다른 cluster 문제에도 적용할 수 있습니다. 이제 알고리즘 파트로 넘어갑니다. 기본적으로 MinCutPool은 다음과 같은 과정으로 진행됩니다.
+
+\begin{aligned}
+\mathbf{X}^{pool} &= {\mathrm{softmax}(\mathbf{S})}^{\top} \cdot \mathbf{X}\\
+\mathbf{A}^{pool} &= {\mathrm{softmax}(\mathbf{S})}^{\top} \cdot \mathbf{A} \cdot \mathrm{softmax}(\mathbf{S})
+\end{aligned}
+
+$$\mathbf{X}^{pool} \in \mathbb{R}^{K \times F}$$에 속한 $$x^{pool}_{ij}$$는 cluster i의 elements를 feature j에 따라 합한 값입니다. 대칭 행렬 $$\mathbf{A}^{pool} \in \mathbb{R}^{K \times K}$$에 속한 $$a^{pool}_{ii}$$는 cluster i에 속한 edge 내부의 weighted sum 입니다. $$a^{pool}_{ij}$$는 cluster i와 cluster j 사이의 weighted sum 입니다. $$\mathbf{A}^{pool}$$은 cut loss를 거치면서 trace의 값을 최대화 하도록 수정되기 때문에, 대각 성분이 주요한 원소가 되는(cluster 내부의 연결이 중요해지는) 행렬로 변화합니다. 대각 성분에만 값이 집중된 인접 행렬(adjacency matrix)는 self-loop를 만들어 MP operation의 다른 node로의 전파를 방해합니다. 따라서 본 연구에서는 대각 성분을 0으로 만든 후 degree normalization을 거친 새로운 adjacency matrix를 제안합니다. 
 
 ### 출처
 - Bianchi, Filippo Maria, Daniele Grattarola, and Cesare Alippi. "Spectral clustering with graph neural networks for graph pooling." In International Conference on Machine Learning, pp. 874-883. PMLR, 2020. <br/>
