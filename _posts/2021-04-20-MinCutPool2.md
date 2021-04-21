@@ -100,5 +100,7 @@ $$\begin{aligned}
 & \mathbf{A}^{pool} = \hat{\mathbf{D}}^{-1/2} \hat{\mathbf{A}} \hat{\mathbf{D}}^{-1/2}
 \end{aligned}$$
 
+식을 보면, 자기 연결성을 아예 제외하고 다시 한 번 degree normalization을 도입합니다. 
+
 ### 출처
 - Bianchi, Filippo Maria, Daniele Grattarola, and Cesare Alippi. "Spectral clustering with graph neural networks for graph pooling." In International Conference on Machine Learning, pp. 874-883. PMLR, 2020. <br/>
