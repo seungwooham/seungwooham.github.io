@@ -19,7 +19,7 @@ $$\begin{aligned}
 여기서 아래 첨자 F는 Frobenius norm의 약자로 $${ \left\| \mathbf{X} \right\| }_F$$는 $$\mathbf{X}$$의 Frobenius norm이라는 의미입니다. Frobenius norm은 다음과 같이 정의됩니다.
 
 $$\begin{aligned}
-{ \left\| \mathbf{A} \right\| }_F = \sqrt{ \sum_{i=1}^{m} \sum_{j=1}^{n} |a_{ij}|^{2} } = \sqrt{ \mathrm{trace}(\mathbf{A} * \mathbf{A}) } = \sqrt { \sum_{i=1}^{min \{ m,n \} } \sigma_{i}^{2} (\mathbf{A}) }
+{ \left\| \mathbf{A} \right\| }_F = \sqrt{ \sum_{i=1}^{m} \sum_{j=1}^{n} \vert a_{ij} \vert ^{2} } = \sqrt{ \mathrm{trace}(\mathbf{A} * \mathbf{A}) } = \sqrt { \sum_{i=1}^{min \{ m,n \} } \sigma_{i}^{2} (\mathbf{A}) }
 \end{aligned}$$
 
 이때 $$\sigma_{i}(\mathbf{A})$$는 $$\mathbf{A}$$의 singular value를 의미합니다.  실제 code 작성할 때에는 첫 번째 정의인 $$\sqrt{ \sum_{i=1}^{m} \sum_{j=1}^{n} {\left| a_{ij} \right|} ^{2}}$$를 활용하였습니다. 몇 가지 예시와 함께 결과를 살펴봅시다.
@@ -88,10 +88,10 @@ print('극단적인 cluster의 orthogonality loss = {:.4f}'.format(loss(lo1(ext)
 
 지금까지는 loss에 대한 이해였습니다. Cut loss와 orthogonality loss의 조합은 다른 cluster 문제에도 적용할 수 있습니다. 이제 알고리즘 파트로 넘어갑니다. 기본적으로 MinCutPool은 다음과 같은 과정으로 진행됩니다.
 
-\begin{aligned}
-\mathbf{X}^{pool} &= {\mathrm{softmax}(\mathbf{S})}^{\top} \cdot \mathbf{X}\\
+$$\begin{aligned}
+\mathbf{X}^{pool} &= {\mathrm{softmax}(\mathbf{S})}^{\top} \cdot \mathbf{X} \\
 \mathbf{A}^{pool} &= {\mathrm{softmax}(\mathbf{S})}^{\top} \cdot \mathbf{A} \cdot \mathrm{softmax}(\mathbf{S})
-\end{aligned}
+\end{aligned}$$
 
 $$\mathbf{X}^{pool} \in \mathbb{R}^{K \times F}$$에 속한 $$x^{pool}_{ij}$$는 cluster i의 elements를 feature j에 따라 합한 값입니다. 대칭 행렬 $$\mathbf{A}^{pool} \in \mathbb{R}^{K \times K}$$에 속한 $$a^{pool}_{ii}$$는 cluster i에 속한 edge 내부의 weighted sum 입니다. $$a^{pool}_{ij}$$는 cluster i와 cluster j 사이의 weighted sum 입니다. $$\mathbf{A}^{pool}$$은 cut loss를 거치면서 trace의 값을 최대화 하도록 수정되기 때문에, 대각 성분이 주요한 원소가 되는(cluster 내부의 연결이 중요해지는) 행렬로 변화합니다. 대각 성분에만 값이 집중된 인접 행렬(adjacency matrix)는 self-loop를 만들어 MP operation의 다른 node로의 전파를 방해합니다. 따라서 본 연구에서는 대각 성분을 0으로 만든 후 degree normalization을 거친 새로운 adjacency matrix를 제안합니다. 
 
