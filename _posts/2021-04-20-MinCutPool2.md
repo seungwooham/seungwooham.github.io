@@ -95,5 +95,10 @@ print('극단적인 cluster의 orthogonality loss = {:.4f}'.format(loss(lo1(ext)
 
 $$\mathbf{X}^{pool} \in \mathbb{R}^{K \times F}$$에 속한 $$x^{pool}_{ij}$$는 cluster i의 elements를 feature j에 따라 합한 값입니다. 대칭 행렬 $$\mathbf{A}^{pool} \in \mathbb{R}^{K \times K}$$에 속한 $$a^{pool}_{ii}$$는 cluster i에 속한 edge 내부의 weighted sum 입니다. $$a^{pool}_{ij}$$는 cluster i와 cluster j 사이의 weighted sum 입니다. $$\mathbf{A}^{pool}$$은 cut loss를 거치면서 trace의 값을 최대화 하도록 수정되기 때문에, 대각 성분이 주요한 원소가 되는(cluster 내부의 연결이 중요해지는) 행렬로 변화합니다. 대각 성분에만 값이 집중된 인접 행렬(adjacency matrix)는 self-loop를 만들어 MP operation의 다른 node로의 전파를 방해합니다. 따라서 본 연구에서는 대각 성분을 0으로 만든 후 degree normalization을 거친 새로운 adjacency matrix를 제안합니다. 
 
+$$\begin{aligned}
+& \hat{\mathbf{A}} = \mathbf{A}^{pool}-\mathbf{I}_K \mathrm{diag}(\mathbf{A}^{pool}) \\
+& \mathbf{A}^{pool} = \hat{\mathbf{D}}^{-1/2} \hat{\mathbf{A}} \hat{\mathbf{D}}^{-1/2}
+\end{aligned}$$
+
 ### 출처
 - Bianchi, Filippo Maria, Daniele Grattarola, and Cesare Alippi. "Spectral clustering with graph neural networks for graph pooling." In International Conference on Machine Learning, pp. 874-883. PMLR, 2020. <br/>
