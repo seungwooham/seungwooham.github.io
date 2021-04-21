@@ -23,6 +23,7 @@ $$\begin{aligned}
 \end{aligned}$$
 
 이때 $$\sigma_{i}(\mathbf{A})$$는 $$\mathbf{A}$$의 singular value를 의미합니다.  실제 code 작성할 때에는 첫 번째 정의인 $$\sqrt{ \sum_{i=1}^{m} \sum_{j=1}^{n} {\left| a_{ij} \right|} ^{2}}$$를 활용하였습니다. 몇 가지 예시와 함께 결과를 살펴봅시다.
+
 ```python
 import numpy as np
 
@@ -80,7 +81,8 @@ print('극단적인 cluster의 orthogonality loss = {:.4f}'.format(loss(lo1(ext)
 극단적인 cluster의 orthogonality loss = 0.9194
 '''
 ```
-완벽하게 분배된 cluster의 경우 orthogonality loss가 0이 되는 것을 확인할 수 있습니다. 극단으로 갈수록 loss는 1에 가까워집니다. $${ \left\| \frac{\mathbf{I}_C}{\sqrt{C}} \right\| }_F$$의 값이 1이기 때문에,
+
+완벽하게 분배된 cluster의 경우 orthogonality loss가 0이 되는 것을 확인할 수 있습니다. Cluster assignment가 오차 범위를 넘어 극단으로 갈수록 loss는 1에 가까워집니다. $$\frac{\mathbf{I}_C}{\sqrt{C}}$$은 모든 원소의 값이 $$1/\sqrt{C}$$이고 Frobenius norm이 1입니다. $$\frac{\mathbf{S}^{\top} \mathbf{S}}{ { \| \mathbf{S}^{\top} \mathbf{S} \| }_F }$$ 또한 Frobenius norm이 1이므로, 원소가 최대한 균등하게 퍼져있으면서(cluster에 속한 node수가 유사함) 동시에 대각성분에만 집중되어있는 것(cluster가 서로 orthogonal함)이 orthogonality loss를 줄일 수 있습니다.
 
 
 ### 출처
