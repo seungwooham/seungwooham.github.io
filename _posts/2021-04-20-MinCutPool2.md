@@ -22,7 +22,7 @@ $$\begin{aligned}
 { \left\| \mathbf{A} \right\| }_F = \sqrt{ \sum_{i=1}^{m} \sum_{j=1}^{n} |a_{ij}|^{2} } = \sqrt{ \mathrm{trace}(\mathbf{A} * \mathbf{A}) } = \sqrt { \sum_{i=1}^{min \{ m,n \} } \sigma_{i}^{2} (\mathbf{A}) }
 \end{aligned}$$
 
-이때 $$\sigma_{i}^{\mathbf{A}}$$는 $$\mathbf{A}$$의 singular value를 의미합니다. 
+이때 $$\sigma_{i}(\mathbf{A})$$는 $$\mathbf{A}$$의 singular value를 의미합니다. 실제 code 작성할 때에는 첫 번째 정의인 $$\sqrt{ \sum_{i=1}^{m} \sum_{j=1}^{n} |a_{ij}|^{2}}$$를 활용하였습니다. 몇 가지 예시와 함께 결과를 살펴봅시다.
 
 ```python
 import numpy as np
