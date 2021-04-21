@@ -22,7 +22,7 @@ $$\begin{aligned}
 { \left\| \mathbf{A} \right\| }_F = \sqrt{ \sum_{i=1}^{m} \sum_{j=1}^{n} \vert a_{ij} \vert ^{2} } = \sqrt{ \mathrm{trace}(\mathbf{A} * \mathbf{A}) } = \sqrt { \sum_{i=1}^{min \{ m,n \} } \sigma_{i}^{2} (\mathbf{A}) }
 \end{aligned}$$
 
-이때 $$\sigma_{i}(\mathbf{A})$$는 $$\mathbf{A}$$의 singular value를 의미합니다.  실제 code 작성할 때에는 첫 번째 정의인 $$\sqrt{ \sum_{i=1}^{m} \sum_{j=1}^{n} {\left| a_{ij} \right|} ^{2}}$$를 활용하였습니다. 몇 가지 예시와 함께 결과를 살펴봅시다.
+이때 $$\sigma_{i}(\mathbf{A})$$는 $$\mathbf{A}$$의 singular value를 의미합니다. 실제 code 작성할 때에는 첫 번째 정의인 $$\sqrt{ \sum_{i=1}^{m} \sum_{j=1}^{n} {\vert a_{ij} \vert} ^{2}}$$를 활용하였습니다. 몇 가지 예시와 함께 결과를 살펴봅시다.
 
 ```python
 import numpy as np
@@ -100,7 +100,12 @@ $$\begin{aligned}
 & \mathbf{A}^{pool} = \hat{\mathbf{D}}^{-1/2} \hat{\mathbf{A}} \hat{\mathbf{D}}^{-1/2}
 \end{aligned}$$
 
-식을 보면, 자기 연결성을 아예 제외하고 다시 한 번 degree normalization을 도입합니다. 
+식을 보면, 자기 연결성을 아예 제외하고 다시 한 번 degree normalization을 도입합니다. 이 부분은 기존의 GNN을 약간 변형한 것으로 보시면 되겠습니다. 저자는 MinCutPool의 특징을 후반부에 다시 정리합니다.
+
+1. Node feature는 MP operation 과정에서 서로 유사해집니다. MinCutPool은 유사한 node feature들을 기반으로 clustering을 진행합니다. 이 과정에서 MinCutPool의 결과 cluster는 서로 강하게 연결되어 있으면서, 유사한 feature를 갖는 node를 연결하게 됩니다. 그리고 degenerate 해 (모든 node가 전체 cluster에 속하거나, 모든 node가 오직 하나의 cluster에만 속하거나)를 피합니다.
+2. $$\mathcal{L}_c$$의 degenerate minima(옳지 않은 minima)는 graph의 대부분의 정보를 소멸시킵니다. 하지만 orthogonality loss의 등장으로 해당 문제가 해결됩니다.
+
+MinCutPool의 space complexity는 $$\mathcal{O}(NK)$$입니다. Node 개수가 많을수록, cluster 수가 많을수록 증가하게 됩니다. Computational complexity는 $$\mathcal{L}_c$$의 분자인 $$\mathrm{Tr}(\mathbf{S}^{\top} \mathbf{A} \mathbf{S})$$에 의해 결정됩니다. 계산된 computational complexity는 $$\mathcal{O}(NK(N+K))$$ 입니다. 하지만 $$\mathbf{A}^{pool}$$가 주로 sparse한 matrix이기 때문에 $$\mathcal{O}(K(E+NK))$$까지 낮아질 수 있다고 합니다. 이제 이론은 충분히 살펴보았으니, 코드와 함께 분석을 진행해봅시다.
 
 ### 출처
 - Bianchi, Filippo Maria, Daniele Grattarola, and Cesare Alippi. "Spectral clustering with graph neural networks for graph pooling." In International Conference on Machine Learning, pp. 874-883. PMLR, 2020. <br/>
