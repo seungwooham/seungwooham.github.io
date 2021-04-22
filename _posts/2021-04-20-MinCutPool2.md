@@ -1,6 +1,6 @@
 ---
 title: "MinCutPool: 이론편2 (MinCutPool: Understanding the Theory 2)"
-date: 2021-04-20
+date: 2021-04-21
 categories:
   - Machine Learning
 tags:
