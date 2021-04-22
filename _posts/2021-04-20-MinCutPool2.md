@@ -97,7 +97,7 @@ $$\mathbf{X}^{pool} \in \mathbb{R}^{K \times F}$$에 속한 $$x^{pool}_{ij}$$는
 
 $$\begin{aligned}
 & \hat{\mathbf{A}} = \mathbf{A}^{pool}-\mathbf{I}_K \mathrm{diag}(\mathbf{A}^{pool}) \\
-& \mathbf{A}^{pool} = \hat{\mathbf{D}}^{-1/2} \hat{\mathbf{A}} \hat{\mathbf{D}}^{-1/2}
+& \tilde{\mathbf{A}}^{pool} = \hat{\mathbf{D}}^{-1/2} \hat{\mathbf{A}} \hat{\mathbf{D}}^{-1/2}
 \end{aligned}$$
 
 식을 보면, 자기 연결성을 아예 제외하고 다시 한 번 degree normalization을 도입합니다. 이 부분은 기존의 GNN을 약간 변형한 것으로 보시면 되겠습니다. 저자는 MinCutPool의 특징을 후반부에 다시 정리합니다.
