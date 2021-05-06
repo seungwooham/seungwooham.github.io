@@ -26,6 +26,11 @@ header:
 
 
 ## RESEARCH PAPERS
+2021
+:   **Spatiotemporal Demand Prediction Model for E-Scooter Sharing Services with Latent Feature and Deep Learning**
+:   Keywords : Sparse Data Prediction, Autoencoder, GRU, LSTM
+:   [Link to the Paper](https://journals.sagepub.com/doi/10.1177/03611981211003896)
+
 2020
 :   **Investigating the Influential Factors for Practical Application of Multi-Class Vehicle Detection for Images from Unmanned Aerial Vehicle using Deep Learning Models**
 :   Keywords : UAV, Vehicle Detection, Deep Learning
