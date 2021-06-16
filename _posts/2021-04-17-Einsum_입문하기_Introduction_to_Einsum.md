@@ -6,7 +6,7 @@ categories:
 tags:
   - 한글
 ---
-### Einsum 입문하기 (Introduction to Einsum)
+## Einsum 입문하기 (Introduction to Einsum)
 
 오늘은 pytorch 코드를 작성하다보면 종종 마주치는 einsum에 대해 간략히 소개해보려합니다. Einsum은 아인슈타인 표기법(Einstein summation convention)을 이용하여 연산을 수행하는 함수입니다. Pytorch외에 numpy와 tensorflow 코드에서도 유사한 방법으로 사용되어서 알아두면 다른 프레임워크를 사용하실 때에도 두고두고 도움이 됩니다.
 

@@ -8,7 +8,7 @@ tags:
 header:
   teaser: "/assets/images/2020-03-28-RBD1_1.png"
 ---
-### 분포들 사이의 관계 1 (Relationship Between Distributions 1)
+## 분포들 사이의 관계 1 (Relationship Between Distributions 1)
 
 예전부터 통계 관련 강의를 들을 때마다 나오는 다양한 분포 (Distribution)에 대하여 궁금한 점이 많았습니다. F 분포가 뭐지? Gamma 분포는 또 뭘까? 하는 생각을 많이 하곤 했는데, 이번 글에서 그에 대한 제 나름의 답을 최대한 수식 없이 정리해보겠습니다. 식을 포함한 자세한 포스팅은 다음에 추가하고, 이번에는 개념적으로만 서술해보도록 노력해보겠습니다.
 

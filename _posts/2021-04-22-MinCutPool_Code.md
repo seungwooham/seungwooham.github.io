@@ -6,7 +6,7 @@ categories:
 tags:
   - 한글
 ---
-### MinCutPool: 코드 분석 (MinCutPool: Understanding the Code)
+## MinCutPool: 코드 분석 (MinCutPool: Understanding the Code)
 
 이론편1은 [여기](<https://seungwooham.github.io/machine%20learning/MinCutPool1/>), 이론편2는 [여기](<https://seungwooham.github.io/machine%20learning/MinCutPool2/>)에서 확인하실 수 있습니다.
 

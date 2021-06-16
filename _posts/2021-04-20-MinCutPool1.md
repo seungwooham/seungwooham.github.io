@@ -6,7 +6,7 @@ categories:
 tags:
   - 한글
 ---
-### MinCutPool: 이론편1 (MinCutPool: Understanding the Theory 1)
+## MinCutPool: 이론편1 (MinCutPool: Understanding the Theory 1)
 
 MinCutPool은 복잡한 그래프에서 주요한 node를 추출하고자 한 여러 시도들 중 하나입니다. 일반적으로 node 추출은 graph를 matrix로 표현한 뒤 고유값 분해를 통해 핵심 node를 결정하는 spectral clustering(SC) 방법을 활용합니다. 하지만 고유값 분해 과정의 계산 복잡도가 높아 ($$O(N^3)$$) scalability issue가 있습니다. 최근 gradient descent 알고리즘을 활용하여 복잡도를 $$O(N^2)$$이나 $$O(N)$$까지 줄이는 연구가 있었습니다(Han & Filippone, 2017). 인공신경망을 이용한 연구도 진행되어 Autoencoder를 활용해 Laplacian matrix(Degree matrix - Adjacency matrix)의 i번째 행을 주요한 eigenvector들의 i번째 component에 연결시키는 작업도 이루어졌습니다(Tian et al., 2014). [(Laplacian matrix에 대한 설명은 이 링크를 클릭하세요.)](<https://junklee.tistory.com/112/>)
 

@@ -6,7 +6,7 @@ categories:
 tags:
   - 한글
 ---
-### 포아송분포의 적률생성함수 (Moment Generating Function of Poisson Distribution)
+## 포아송분포의 적률생성함수 (Moment Generating Function of Poisson Distribution)
 
 포아송분포 $$Poisson(\lambda)$$의 적률생성함수에 대하여 알아봅시다.
 
