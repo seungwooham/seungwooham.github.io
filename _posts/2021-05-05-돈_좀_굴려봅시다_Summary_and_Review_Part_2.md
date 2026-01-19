@@ -77,7 +77,7 @@ OECD 경기선행지수의 ‘방향’이 바뀌는 것에 주목해야 합니�
 ### 재고순환 주기에 의한 투자 전략
 1. 재고순환 1단계 (재고와 출하가 함께 증가)
 - 철강, 화학 등 소재주 위주 투자 (채권 투자 손실, 금융 및 건설업종 약세)
-- 한국의 경기선행지수가 오른 다음 6개월 후 원자재 가격 상승 ([링크](<http://www.index.go.kr/potal/main/EachDtlPageDetail.do?idx_cd=1057>))
+- 한국의 경기선행지수가 오른 다음 6개월 후 원자재 가격 상승 ([링크](<https://www.index.go.kr/potal/main/EachDtlPageDetail.do?idx_cd=1057>))
 - 철강 산업은 중국 경기에 민감함 ([링크](<https://kr.investing.com/indices/thomson-reuters---jefferies-crb>))
 
 2. 재고순환 2단계 (재고는 증가, 출하는 감소)

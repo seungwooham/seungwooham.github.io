@@ -52,13 +52,13 @@ tags: [Korean, book-review, investment-strategy]
 
  > 정부의 인위적인 저금리 정책 – 대출 증가, 소비와 투자 증가 – 시장 유동성 증가 – 주식/부동산 가격 상승, 소비자물가 상승 – 생활 수준 하락, 임금인상 요구 증가 – 제품원가 인상 – 수출 경쟁력 저하 – 국제수지 악화 – 환율상승, 물가 급등 – 외환위기 가능성
 
-[소비자물가지수](<http://kostat.go.kr/incomeNcpi/cpi/index.action>)와 [근원 소비자물가지수](<http://www.index.go.kr/potal/main/EachDtlPageDetail.do?idx_cd=1060>)를 같이 확인하면 정확한 추세를 확인할 수 있습니다.
+[소비자물가지수](<https://kostat.go.kr/incomeNcpi/cpi/index.action>)와 [근원 소비자물가지수](<https://www.index.go.kr/potal/main/EachDtlPageDetail.do?idx_cd=1060>)를 같이 확인하면 정확한 추세를 확인할 수 있습니다.
 
-[생산자물가지수](<http://www.index.go.kr/potal/main/EachDtlPageDetail.do?idx_cd=1061>)는 일반적으로 소비자물가지수에 선행합니다. 즉 생산자물가지수가 오르면 3~6개월 정도 뒤에 소비자물가지수도 상승합니다.
+[생산자물가지수](<https://www.index.go.kr/potal/main/EachDtlPageDetail.do?idx_cd=1061>)는 일반적으로 소비자물가지수에 선행합니다. 즉 생산자물가지수가 오르면 3~6개월 정도 뒤에 소비자물가지수도 상승합니다.
 
 [GDP gap](<https://stats.oecd.org/index.aspx?QueryId=51655>) (실질 GDP - 잠재 GDP)가 양수면 물가가 상승하고, 음수면 물가가 하락합니다. 3개월 정도 확인하면서 추세를 보셔야하고, 보통 6개월 뒤에 그 효과가 나타납니다.
 
-결국 경제추세를 확인하기 위해서는 소비자 물가상승률, 근원 소비자 물가상승률, 생산자 물가상승률, GDP gap, 그리고 마지막으로 아주 중요한 환율까지 같이 보셔야 합니다. 위 데이터들은 [여기](<http://ecos.bok.or.kr/>)에서도 확인이 가능합니다.
+결국 경제추세를 확인하기 위해서는 소비자 물가상승률, 근원 소비자 물가상승률, 생산자 물가상승률, GDP gap, 그리고 마지막으로 아주 중요한 환율까지 같이 보셔야 합니다. 위 데이터들은 [여기](<https://ecos.bok.or.kr/>)에서도 확인이 가능합니다.
 
 Part 1이 생각보다 길어졌네요 Part 2에서 끝내볼 수 있도록 하겠습니다.
 
