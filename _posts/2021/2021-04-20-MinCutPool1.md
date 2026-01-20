@@ -186,7 +186,7 @@ plt.show()
 
 ![Figure_4](/assets/img/posts/2021/2021-04-20-MCP4.png)
 
-처음에는 loss가 s11의 값이 [1.00, 0.00, 0.00]일 때 최소일 줄 알았는데 꼭 그렇지는 않습니다. 같은 cluster에 속한 다른 node들의 clusterg assignment 값인 [0.80, 0.20, 0.00]과 [1.00, 0.00, 0.00]의 가중 평균 즈음에 해당하는 [0.87 0.13 0.00]에서 최소치를 보입니다. 알다가도 모르겠지만, 정답 cluster에 제대로 접근하는 것과, 같은 cluster내 node 사이의 균형성을 모두 고려하는 듯 합니다. 혹은 3번 node가 node 1, 2와 연결되어 있으니, 실제로 일부 지분은 cluster 2와 cluster 3에 해당할지도 모릅니다. 논문에서 서술한 cut loss의 특성은 다음과 같습니다.
+처음에는 loss가 s11의 값이 [1.00, 0.00, 0.00]일 때 최소일 줄 알았는데 꼭 그렇지는 않습니다. 같은 cluster에 속한 다른 node들의 cluster assignment 값인 [0.80, 0.20, 0.00]과 [1.00, 0.00, 0.00]의 가중 평균 즈음에 해당하는 [0.87 0.13 0.00]에서 최소치를 보입니다. 알다가도 모르겠지만, 정답 cluster에 제대로 접근하는 것과, 같은 cluster내 node 사이의 균형성을 모두 고려하는 듯 합니다. 혹은 3번 node가 node 1, 2와 연결되어 있으니, 실제로 일부 지분은 cluster 2와 cluster 3에 해당할지도 모릅니다. 논문에서 서술한 cut loss의 특성은 다음과 같습니다.
 
 $$\mathcal{L}_c$$는 강하게 연결되어 있는 node가 서로 함께 cluster 되도록 한다고 합니다. $$\mathcal{L}_c$$의 최대값은 0으로, graph 내에 연결된 node가 모두 다른 cluster에 속할 때 최대값에 도달합니다. 최소값은 1로, cluster끼리의 연결이 없으면서 한 cluster내의 node들은 모두 동일하며 다른 cluster와 orthogonal한 $$\mathbf{S}$$를 가질 때 발생합니다. $$\mathcal{L}_c$$는 non-convex한 문제여서 local minima에 갇힐 우려가 있다고 합니다. 예를 들어 모든 node를 한 cluster로 묶거나, 모든 node가 모든 cluster에 균일하게 퍼지는 경우입니다.
 

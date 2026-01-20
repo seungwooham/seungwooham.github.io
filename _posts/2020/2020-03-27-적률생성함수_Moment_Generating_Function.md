@@ -28,7 +28,7 @@ $$\begin{align*}
 
 $$E(X^{k})\qquad (k=0, 1, 2,\;\cdots)$$
 
-와 같습니다. 이러한 뜻에서 $$M(t)$$를 $$f$$의 **적률생성함수** (moment generatinf function)라고 부릅니다.
+와 같습니다. 이러한 뜻에서 $$M(t)$$를 $$f$$의 **적률생성함수** (moment generating function)라고 부릅니다.
 
 ### 출처
 김우철. 수리통계학 = Mathematical Statistics / 김우철 지음, 2012.
