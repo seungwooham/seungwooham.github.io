@@ -18,7 +18,7 @@ $$\begin{aligned}
 여기서 아래 첨자 F는 Frobenius norm의 약자로 $${ \left\| \mathbf{X} \right\| }_F$$는 $$\mathbf{X}$$의 Frobenius norm이라는 의미입니다. Frobenius norm은 다음과 같이 정의됩니다.
 
 $$\begin{aligned}
-{ \left\| \mathbf{A} \right\| }_F = \sqrt{ \sum_{i=1}^{m} \sum_{j=1}^{n} \vert a_{ij} \vert ^{2} } = \sqrt{ \mathrm{trace}(\mathbf{A} * \mathbf{A}) } = \sqrt { \sum_{i=1}^{min \{ m,n \} } \sigma_{i}^{2} (\mathbf{A}) }
+{ \left\| \mathbf{A} \right\| }_F = \sqrt{ \sum_{i=1}^{m} \sum_{j=1}^{n} \vert a_{ij} \vert ^{2} } = \sqrt{ \mathrm{trace}(\mathbf{A}^{*} \mathbf{A}) } = \sqrt { \sum_{i=1}^{\min \{ m,n \} } \sigma_{i}^{2} (\mathbf{A}) }
 \end{aligned}$$
 
 이때 $$\sigma_{i}(\mathbf{A})$$는 $$\mathbf{A}$$의 singular value를 의미합니다. 실제 code 작성할 때에는 첫 번째 정의인 $$\sqrt{ \sum_{i=1}^{m} \sum_{j=1}^{n} {\vert a_{ij} \vert} ^{2}}$$를 활용하였습니다. 몇 가지 예시와 함께 결과를 살펴봅시다.

@@ -107,7 +107,7 @@ out_adj = (out_adj / d) / d.transpose(1, 2)
 
 $$\begin{aligned}
 & \hat{\mathbf{A}} = \mathbf{A}^{pool}-\mathbf{I}_K \mathrm{diag}(\mathbf{A}^{pool}) \\
-& \mathbf{A}^{pool} = \hat{\mathbf{D}}^{-1/2} \hat{\mathbf{A}} \hat{\mathbf{D}}^{-1/2}
+& \tilde{\mathbf{A}}^{pool} = \hat{\mathbf{D}}^{-1/2} \hat{\mathbf{A}} \hat{\mathbf{D}}^{-1/2}
 \end{aligned}$$
 
 지금까지는 이 연산 한 번을 거치면 자동으로 cluster가 된다고 생각하고 있었는데, 공식 문서에 나와있듯이 이건 하나의 layer이고, 이 layer를 여러 번 반복해야지만 적절한 결과를 얻을 수 있습니다. 아래는 전체 코드입니다.

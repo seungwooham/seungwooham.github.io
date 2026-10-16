@@ -1,5 +1,6 @@
 ---
 title: "포아송분포 (Poisson Distribution)"
+description: "시행 횟수가 많고 성공률이 작은 이항분포를 근사하는 포아송 근사와 포아송분포의 확률질량함수를 정리합니다."
 date: 2020-03-24 00:00:00 +0900
 categories: [ML/DL, Statistics]
 tags: [Korean, poisson-distribution, probability]
@@ -46,7 +47,7 @@ $$f(x)=\frac{\lambda^{x}}{x!}e^{-\lambda} \qquad x=0, 1, 2,\cdots$$
 이와 같은 확률질량함수를 갖는 분포를 포아송분포 (Poisson distribution)라고 부르며, 기호로는 $$X\sim Poisson(\lambda)$$로 나타냅니다.
 
 ---
-### 포아송분포 $$\mathbf{Poisson(\lambda)}$$의 확률질량함수
+### 포아송분포 Poisson(λ)의 확률질량함수
 
 $$f(x)=\frac{\lambda^x}{x!}e^{-\lambda} \qquad x=0, 1, 2, \cdots$$
 

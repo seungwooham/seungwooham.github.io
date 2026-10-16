@@ -1,5 +1,6 @@
 ---
 title: "포아송분포의 적률생성함수 (Moment Generating Function of Poisson Distribution)"
+description: "지수함수의 급수 전개로 포아송분포의 적률생성함수를 유도하고, 이를 미분해 평균과 분산을 구합니다."
 date: 2020-03-27 01:00:00 +0900
 categories: [ML/DL, Statistics]
 tags: [Korean, poisson-distribution, moment-generating-function]
@@ -25,7 +26,7 @@ M(t)&=\sum^{\infty}_{x=0}e^{tx}f(x)=\sum^{\infty}_{x=0}e^{tx}\frac{\lambda^{x}e^
 \end{align*}$$
 
 ---
-### 포아송분포 $$\mathbf{Poisson(\lambda)}$$의 적률생성함수
+### 포아송분포 Poisson(λ)의 적률생성함수
 
 $$M(t)=e^{\lambda (e^t-1)}$$
 
@@ -48,13 +49,13 @@ $$\begin{align*}
 이다. 따라서
 
 $$\begin{align*}
-Var(X)&=E(X^2)-{E(x)}^2\\
+Var(X)&=E(X^2)-{E(X)}^2\\
 &=\lambda + \lambda^2 - \lambda^2 \\
 &=\lambda \\
 \end{align*}$$
 
 ---
-### 포아송분포 $$\mathbf{Poisson(\lambda)}$$의 평균과 분산
+### 포아송분포 Poisson(λ)의 평균과 분산
 $$X \sim Poisson(\lambda)$$일 때
 
 $$E(X)=\lambda, Var(X)=\lambda$$
