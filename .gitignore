@@ -27,3 +27,8 @@ _sass/vendors
 assets/js/dist
 
 CLAUDE.md
+
+# Hidden system files
+*~
+.DS_Store
+Thumbs.db
