@@ -3,6 +3,7 @@ title: "Einsum 입문하기 (Introduction to Einsum)"
 date: 2021-04-17 00:00:00 +0900
 categories: [ML/DL, PyTorch]
 tags: [Korean, einsum, tensor-operations]
+math: true
 ---
 ## Einsum 입문하기 (Introduction to Einsum)
 

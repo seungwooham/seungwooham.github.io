@@ -3,6 +3,7 @@ title: "포아송분포 (Poisson Distribution)"
 date: 2020-03-24 00:00:00 +0900
 categories: [ML/DL, Statistics]
 tags: [Korean, poisson-distribution, probability]
+math: true
 ---
 ## 포아송분포 (Poisson Distribution)
 
@@ -27,6 +28,7 @@ $$\begin{align*}
 ---
 ### 이항확률의 포아송 근사
 $$n$$이 충분히 크고 $$p$$가 충분히 작으면서 $$np=\lambda$$이면
+
 $$\begin{pmatrix}n\\x\end{pmatrix}p^{x}(1-p)^{n-x}\fallingdotseq\frac{\lambda^{x}}{x!}\cdot e^{-\lambda}$$
 
 ---
@@ -45,6 +47,7 @@ $$f(x)=\frac{\lambda^{x}}{x!}e^{-\lambda} \qquad x=0, 1, 2,\cdots$$
 
 ---
 ### 포아송분포 $$\mathbf{Poisson(\lambda)}$$의 확률질량함수
+
 $$f(x)=\frac{\lambda^x}{x!}e^{-\lambda} \qquad x=0, 1, 2, \cdots$$
 
 ---

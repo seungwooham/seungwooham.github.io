@@ -3,6 +3,7 @@ title: "분포들 사이의 관계 1 (Relationship Between Distributions 1)"
 date: 2020-03-28 00:00:00 +0900
 categories: [ML/DL, Statistics]
 tags: [Korean, probability-distribution, statistics]
+math: true
 ---
 ## 분포들 사이의 관계 1 (Relationship Between Distributions 1)
 
@@ -12,7 +13,7 @@ tags: [Korean, probability-distribution, statistics]
 
 ![Figure_1](/assets/img/posts/2020/2020-03-28-RBD1_1.png)
 
-**포아송분포 (Poisson distribution)**는 이항분포의 특별한 경우, 혹은 근사로 생각하면 됩니다. 이항분포에서는 **시행 횟수**와 **사건의 발생 확률**에 따라서 분포의 모습이 달라지는데, 포아송분포는 여기서 시행 횟수는 충분히 많고, 사건의 발생 확률은 충분히 적을 때 적용될 수 있습니다. 예를 들어 올 한해 동안 교대역이 물에 잠기는 횟수는 포아송분포를 따를 수 있습니다. 포아송분포는 발생률(rate, $$\lambda$$)을 파라미터로 갖습니다. 자세한 식이 궁금하신 분은 [포아송분포에 대한 게시글](<https://seungwooham.github.io/%ED%86%B5%EA%B3%84/%ED%8F%AC%EC%95%84%EC%86%A1%EB%B6%84%ED%8F%AC_Poisson_distribution/>)을 확인해주세요
+**포아송분포 (Poisson distribution)**는 이항분포의 특별한 경우, 혹은 근사로 생각하면 됩니다. 이항분포에서는 **시행 횟수**와 **사건의 발생 확률**에 따라서 분포의 모습이 달라지는데, 포아송분포는 여기서 시행 횟수는 충분히 많고, 사건의 발생 확률은 충분히 적을 때 적용될 수 있습니다. 예를 들어 올 한해 동안 교대역이 물에 잠기는 횟수는 포아송분포를 따를 수 있습니다. 포아송분포는 발생률(rate, $$\lambda$$)을 파라미터로 갖습니다. 자세한 식이 궁금하신 분은 [포아송분포에 대한 게시글](/posts/포아송분포_Poisson_Distribution/)을 확인해주세요
 
 포아송분포가 발생 횟수에 대한 분포라면, **지수분포 (exponential distribution)**는 첫 번째 발생까지의 대기시간에 대한 확률밀도함수입니다. 위의 교대역이 물에 잠기는 예시를 활용하면, 위 사건의 지수분포는 하루하루의 교대역이 물에 잠길 확률을 나타내게 됩니다. 지수분포도 포아송분포와 마찬가지로 발생률(rate, $$\lambda$$)을 파라미터로 갖습니다.
 

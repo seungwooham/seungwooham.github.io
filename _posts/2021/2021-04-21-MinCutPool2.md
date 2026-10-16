@@ -3,10 +3,11 @@ title: "MinCutPool: 이론편2 (MinCutPool: Understanding the Theory 2)"
 date: 2021-04-21 00:00:00 +0900
 categories: [Paper Review, Graph Neural Network]
 tags: [Korean, MinCutPool, graph-pooling, spectral-clustering]
+math: true
 ---
 ## MinCutPool: 이론편2 (MinCutPool: Understanding the Theory 2)
 
-이론편1은 [여기](<https://seungwooham.github.io/machine%20learning/MinCutPool1/>)에서 확인하실 수 있습니다.
+이론편1은 [여기](/posts/MinCutPool1/)에서 확인하실 수 있습니다.
 
 지난 1편에서 local minima에 빠지기 쉬운 cut loss를 보안하기 위해 orthogonality loss가 있다는 이야기까지 했습니다. Cut loss가 빠질 수 있는 local minima에는 두 가지가 있었는데, 첫 번째는 모든 node가 모든 cluster에 같은 정도로 속하는 것, 두 번째는 모든 node가 한 cluster에만 속하는 경우였습니다. Orthogonality loss는 이 문제를 해결하기 위해 cluster assignment가 orthogonal 하도록(모든 node가 모든 cluster에 같은 정도로 속하는 경우 해결), 그리고 cluster의 size가 비슷하도록(모든 node가 한 cluster에만 속하는 경우 해결) 유도합니다. 식은 아래와 같이 나타납니다.
 

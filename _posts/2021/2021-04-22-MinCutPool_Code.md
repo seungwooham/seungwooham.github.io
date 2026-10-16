@@ -3,10 +3,11 @@ title: "MinCutPool: 코드 분석 (MinCutPool: Understanding the Code)"
 date: 2021-04-22 00:00:00 +0900
 categories: [Paper Review, Graph Neural Network]
 tags: [Korean, MinCutPool, PyTorch, code-analysis]
+math: true
 ---
 ## MinCutPool: 코드 분석 (MinCutPool: Understanding the Code)
 
-이론편1은 [여기](<https://seungwooham.github.io/machine%20learning/MinCutPool1/>), 이론편2는 [여기](<https://seungwooham.github.io/machine%20learning/MinCutPool2/>)에서 확인하실 수 있습니다.
+이론편1은 [여기](/posts/MinCutPool1/), 이론편2는 [여기](/posts/MinCutPool2/)에서 확인하실 수 있습니다.
 
 이번 게시물에서는 MinCutPool의 code를 예시 데이터와 함께 분석해보겠습니다. 제가 사용한 데이터는 마이크로 모빌리티의 이동패턴 데이터인데, 실제 영업에서 사용된 데이터이므로 자세한 공개가 어려워 데이터 차원의 변화를 위주로 설명드리겠습니다. 전체 코드를 보기 전에 제가 정의한 x(feature matrix), adj(adjacecny matrix,), s(cluster assignment matrix)의 차원은 각각 다음과 같습니다.
 
@@ -56,7 +57,7 @@ def _rank3_diag(x):
     out = eye * x.unsqueeze(2).expand(*x.size(), x.size(1))
     return out
 ```
-Einsum을 이용한 함수입니다. 아직 einsum이 익숙하시지 않은 분은 [이 글](<https://seungwooham.github.io/machine%20learning/Einsum_%EC%9E%85%EB%AC%B8%ED%95%98%EA%B8%B0_Introduction_to_Einsum/>)을 확인해보세요. _rank3_trace(x)는 행렬의 trace를 구해줍니다. ijj에서 첫 i는 batch 구분을 위해서 존재합니다. 그 뒤로는 행렬의 $$a_{jj}$$를 더합니다. 제 예시에서는 batch가 1차원이어서 x는 [1, 1]차원의 scalar같은 행렬이 됩니다.
+Einsum을 이용한 함수입니다. 아직 einsum이 익숙하시지 않은 분은 [이 글](/posts/Einsum_입문하기_Introduction_to_Einsum/)을 확인해보세요. _rank3_trace(x)는 행렬의 trace를 구해줍니다. ijj에서 첫 i는 batch 구분을 위해서 존재합니다. 그 뒤로는 행렬의 $$a_{jj}$$를 더합니다. 제 예시에서는 batch가 1차원이어서 x는 [1, 1]차원의 scalar같은 행렬이 됩니다.
 eye는 일단 node 개수와 같은 identity matrix입니다. _rank3_diag는 x의 원소가 diagonal인 matrix를 생성합니다.
 
 ```python

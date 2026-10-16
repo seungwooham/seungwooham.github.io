@@ -3,6 +3,7 @@ title: "MinCutPool: 이론편1 (MinCutPool: Understanding the Theory 1)"
 date: 2021-04-20 00:00:00 +0900
 categories: [Paper Review, Graph Neural Network]
 tags: [Korean, MinCutPool, graph-pooling, spectral-clustering]
+math: true
 ---
 ## MinCutPool: 이론편1 (MinCutPool: Understanding the Theory 1)
 

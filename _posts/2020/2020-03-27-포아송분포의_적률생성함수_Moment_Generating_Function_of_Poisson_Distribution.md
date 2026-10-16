@@ -3,6 +3,7 @@ title: "포아송분포의 적률생성함수 (Moment Generating Function of Poi
 date: 2020-03-27 01:00:00 +0900
 categories: [ML/DL, Statistics]
 tags: [Korean, poisson-distribution, moment-generating-function]
+math: true
 ---
 ## 포아송분포의 적률생성함수 (Moment Generating Function of Poisson Distribution)
 
@@ -10,7 +11,7 @@ tags: [Korean, poisson-distribution, moment-generating-function]
 
 적률생성함수에 대해서 아직 모르시는 분들은 [여기]를 확인해보시면 됩니다.
 
-[여기]: https://seungwooham.github.io/%ED%86%B5%EA%B3%84/%EC%A0%81%EB%A5%A0%EC%83%9D%EC%84%B1%ED%95%A8%EC%88%98_Moment_Generating_Function/
+[여기]: /posts/적률생성함수_Moment_Generating_Function/
 
 $$e^{a}=\sum^{\infty}_{x=0}\frac{a^x}{x!}$$
 
@@ -25,6 +26,7 @@ M(t)&=\sum^{\infty}_{x=0}e^{tx}f(x)=\sum^{\infty}_{x=0}e^{tx}\frac{\lambda^{x}e^
 
 ---
 ### 포아송분포 $$\mathbf{Poisson(\lambda)}$$의 적률생성함수
+
 $$M(t)=e^{\lambda (e^t-1)}$$
 
 ---

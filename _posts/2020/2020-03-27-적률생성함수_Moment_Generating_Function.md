@@ -3,6 +3,7 @@ title: "적률생성함수 (Moment Generating Function)"
 date: 2020-03-27 00:00:00 +0900
 categories: [ML/DL, Statistics]
 tags: [Korean, moment-generating-function, probability]
+math: true
 ---
 ## 적률생성함수 (Moment Generating Function)
 

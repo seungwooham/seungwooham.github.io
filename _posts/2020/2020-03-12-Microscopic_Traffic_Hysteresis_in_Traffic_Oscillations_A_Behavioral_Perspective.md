@@ -3,6 +3,7 @@ title: "Microscopic Traffic Hysteresis in Traffic Oscillations: A Behavioral Per
 date: 2020-03-12 00:00:00 +0900
 categories: [Paper Review, Transportation]
 tags: [English, traffic-hysteresis, car-following, NGSIM]
+math: true
 ---
 ## Microscopic Traffic Hysteresis in Traffic Oscillations: A Behavioral Perspective
 ### Author: Danjue Chen, Jorge A.Laval, Soyoung Ahn, Zuduo Zheng
@@ -27,7 +28,9 @@ The paper uses the "Next Generation Simulation project" (NGSIM, 2006) data. Whil
 ![Figure_1](/assets/img/posts/2020/2020-03-12-MTH1.jpg)
 
 ### Background
-$$\tau={1\over wk} \ and \ d={1\over k}$$
+
+$$\tau={1\over wk} \quad\text{and}\quad d={1\over k}$$
+
 The variable $$\tau$$ is the wave trip time between two consecutive drivers (time shift), and $$k$$ is the jam spacing. Then $$d$$ becomes a space shift. $$w$$ indicates the wave speed, and $$k$$ is jam density. The individual driver can be denoted as subscript $$i$$. Detailed information is described below.
 
 ![Figure_2](/assets/img/posts/2020/2020-03-12-MTH2.jpg)
@@ -36,7 +39,7 @@ Laval and Leclercq (2010) found out that wave trip time and space shift varies, 
 
 $$\eta_i(t) = \tau_i(t)/\tau$$
 
-$$\eta_i(t)$$ deviated from the constant value when the non-equilibrium flow started. The beginning and ending points of the response to an oscillation are denoted by $$t^0$$ and $$t^1$$, respectively. It is noteworthy that the response refers to the change of $$\eta_i(t)$$ rather than the physical action such as acceleration or deceleration. By the value of $$\eta^0_i$$, the type of driver was categorized: originally aggressive (OA) if $$\eta^0_i << 1$$, originally timid (OT) if $$\eta^0_i >> 1$$, and originally Newell (ON) if $$\eta^0_i ~ 1$$.
+$$\eta_i(t)$$ deviated from the constant value when the non-equilibrium flow started. The beginning and ending points of the response to an oscillation are denoted by $$t^0$$ and $$t^1$$, respectively. It is noteworthy that the response refers to the change of $$\eta_i(t)$$ rather than the physical action such as acceleration or deceleration. By the value of $$\eta^0_i$$, the type of driver was categorized: originally aggressive (OA) if $$\eta^0_i \ll 1$$, originally timid (OT) if $$\eta^0_i \gg 1$$, and originally Newell (ON) if $$\eta^0_i \sim 1$$.
 
 ![Figure_3](/assets/img/posts/2020/2020-03-12-MTH3.jpg)
 
