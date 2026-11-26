@@ -6,8 +6,6 @@ categories: [ML/DL, Statistics]
 tags: [Korean, poisson-distribution, moment-generating-function]
 math: true
 ---
-## 포아송분포의 적률생성함수 (Moment Generating Function of Poisson Distribution)
-
 포아송분포 $$Poisson(\lambda)$$의 적률생성함수에 대하여 알아봅시다.
 
 적률생성함수에 대해서 아직 모르시는 분들은 [여기]를 확인해보시면 됩니다.
@@ -26,7 +24,7 @@ M(t)&=\sum^{\infty}_{x=0}e^{tx}f(x)=\sum^{\infty}_{x=0}e^{tx}\frac{\lambda^{x}e^
 \end{align*}$$
 
 ---
-### 포아송분포 Poisson(λ)의 적률생성함수
+## 포아송분포 Poisson(λ)의 적률생성함수
 
 $$M(t)=e^{\lambda (e^t-1)}$$
 
@@ -55,7 +53,7 @@ Var(X)&=E(X^2)-{E(X)}^2\\
 \end{align*}$$
 
 ---
-### 포아송분포 Poisson(λ)의 평균과 분산
+## 포아송분포 Poisson(λ)의 평균과 분산
 $$X \sim Poisson(\lambda)$$일 때
 
 $$E(X)=\lambda, Var(X)=\lambda$$
@@ -66,5 +64,5 @@ $$E(X)=\lambda, Var(X)=\lambda$$
 
 일반적으로 단위당 발생률이 $$\lambda$$인 희귀현상에 대하여, 0에서 $$t$$ 사이의 발생 횟수는 확률분포로서 포아송분포 $$Poisson(\lambda t)$$가 흔히 사용됩니다. 여기서 '희귀'라는 말은 짧은 기간 동안에는 발생 가능성이 작으며, 두 번 이상 발생할 확률이 한 번 발생할 확률에 비하여 매우 작음을 의미합니다.
 
-### 출처
+## 출처
 김우철. 수리통계학 = Mathematical Statistics / 김우철 지음, 2012.

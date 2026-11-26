@@ -5,8 +5,6 @@ categories: [Paper Review, Graph Neural Network]
 tags: [Korean, MinCutPool, graph-pooling, spectral-clustering]
 math: true
 ---
-## MinCutPool: 이론편2 (MinCutPool: Understanding the Theory 2)
-
 이론편1은 [여기](/posts/MinCutPool1/)에서 확인하실 수 있습니다.
 
 지난 1편에서 local minima에 빠지기 쉬운 cut loss를 보안하기 위해 orthogonality loss가 있다는 이야기까지 했습니다. Cut loss가 빠질 수 있는 local minima에는 두 가지가 있었는데, 첫 번째는 모든 node가 모든 cluster에 같은 정도로 속하는 것, 두 번째는 모든 node가 한 cluster에만 속하는 경우였습니다. Orthogonality loss는 이 문제를 해결하기 위해 cluster assignment가 orthogonal 하도록(모든 node가 모든 cluster에 같은 정도로 속하는 경우 해결), 그리고 cluster의 size가 비슷하도록(모든 node가 한 cluster에만 속하는 경우 해결) 유도합니다. 식은 아래와 같이 나타납니다.
@@ -106,5 +104,5 @@ $$\begin{aligned}
 
 MinCutPool의 space complexity는 $$\mathcal{O}(NK)$$입니다. Node 개수가 많을수록, cluster 수가 많을수록 증가하게 됩니다. Computational complexity는 $$\mathcal{L}_c$$의 분자인 $$\mathrm{Tr}(\mathbf{S}^{\top} \mathbf{A} \mathbf{S})$$에 의해 결정됩니다. 계산된 computational complexity는 $$\mathcal{O}(NK(N+K))$$ 입니다. 하지만 $$\mathbf{A}^{pool}$$가 주로 sparse한 matrix이기 때문에 $$\mathcal{O}(K(E+NK))$$까지 낮아질 수 있다고 합니다. 이제 이론은 충분히 살펴보았으니, 코드와 함께 분석을 진행해봅시다.
 
-### 출처
+## 출처
 - Bianchi, Filippo Maria, Daniele Grattarola, and Cesare Alippi. "Spectral clustering with graph neural networks for graph pooling." In International Conference on Machine Learning, pp. 874-883. PMLR, 2020. <br/>

@@ -5,8 +5,6 @@ categories: [Paper Review, Graph Neural Network]
 tags: [Korean, MinCutPool, PyTorch, code-analysis]
 math: true
 ---
-## MinCutPool: 코드 분석 (MinCutPool: Understanding the Code)
-
 이론편1은 [여기](/posts/MinCutPool1/), 이론편2는 [여기](/posts/MinCutPool2/)에서 확인하실 수 있습니다.
 
 이번 게시물에서는 MinCutPool의 code를 예시 데이터와 함께 분석해보겠습니다. 제가 사용한 데이터는 마이크로 모빌리티의 이동패턴 데이터인데, 실제 영업에서 사용된 데이터이므로 자세한 공개가 어려워 데이터 차원의 변화를 위주로 설명드리겠습니다. 전체 코드를 보기 전에 제가 정의한 x(feature matrix), adj(adjacecny matrix,), s(cluster assignment matrix)의 차원은 각각 다음과 같습니다.
@@ -176,6 +174,6 @@ return 되는 out은 $$\mathbf{X}^{pool} = {\mathrm{softmax}(\mathbf{S})}^{\top}
 
 간단한 논문이었는데 자세하게 해석하다보니 세 개의 게시물이 올라갔습니다. 다음에는 attention과 연관된 graph 논문을 다루어보고자 합니다.
 
-### 출처
+## 출처
 - Bianchi, Filippo Maria, Daniele Grattarola, and Cesare Alippi. "Spectral clustering with graph neural networks for graph pooling." In International Conference on Machine Learning, pp. 874-883. PMLR, 2020. <br/>
 - https://pytorch-geometric.readthedocs.io/en/latest/_modules/torch_geometric/nn/dense/mincut_pool.html#dense_mincut_pool

@@ -5,10 +5,9 @@ categories: [Paper Review, Transportation]
 tags: [English, traffic-hysteresis, car-following, NGSIM]
 math: true
 ---
-## Microscopic Traffic Hysteresis in Traffic Oscillations: A Behavioral Perspective
-### Author: Danjue Chen, Jorge A.Laval, Soyoung Ahn, Zuduo Zheng
+Author: Danjue Chen, Jorge A.Laval, Soyoung Ahn, Zuduo Zheng
 
-### Abstract
+## Abstract
 The paper investigated the impact of driver behavior on traffic hysteresis in traffic oscillations. The driver's behavior impacts the occurrence and the type of traffic hysteresis. The reaction time driver to deceleration wave is highly correlated with traffic hysteresis. The research suggests using the different car-following models by the different stages of an oscillation.
 
 The findings of this research can be explained as below.
@@ -18,7 +17,7 @@ The findings of this research can be explained as below.
 - The paper showed that driver behavior varies with the development stage of traffic oscillations.
 - The paper showed that the behavior change of driver results in a different distribution of hysteresis loops.
 
-### Introduction
+## Introduction
 In general, traffic hysteresis is retardation in speed recovery. Newell (1965) argued that hysteresis is the result of asymmetry between acceleration and deceleration. Zhang (1999) used three phases to describe traffic flow: acceleration, deceleration, and strong equilibrium phase. Yeo and Skadarbonis (2009) defined five different traffic states: free-flow, acceleration, deceleration, coasting, and stationary. Same as Newell, they also suggest the asymmetry between acceleration and deceleration causes traffic hysteresis.
 
 The paper focuses on hysteresis in stop-and-go traffic only. However, hysteresis happens in other types of traffic flow too. Yeo and Skabardonis (2009) observed hysteresis even in stable speed traffic flow.
@@ -27,7 +26,7 @@ The paper uses the "Next Generation Simulation project" (NGSIM, 2006) data. Whil
 
 ![Figure_1](/assets/img/posts/2020/2020-03-12-MTH1.jpg)
 
-### Background
+## Background
 
 $$\tau={1\over wk} \quad\text{and}\quad d={1\over k}$$
 
@@ -52,7 +51,7 @@ The figure below is the example of the concave pattern with CW loop; (b) example
 
 ![Figure_6](/assets/img/posts/2020/2020-03-12-MTH6.jpg)
 
-### Discussions
+## Discussions
 From a modeling perspective, their findings indicate that the oscillation development stage should be taken into account
 when modeling the driver's car-following behavior. The statistical results (which are not included in this article) suggest that driver behavior varies with the development stage of traffic oscillations. In particular, drivers' preference of reaction pattern and response scenario varies in different development stages.
 In order to take the behavior change into account in a simulation model, one possibility is to evaluate the leader's speed as a proxy for the oscillation development stage. For example, once the leader's speed reaches zero, the oscillation stage is fully-developed while before that instance, the stage is growth. They also find it necessary to capture the response scenario when describing the driver's car-following behavior because that will affect the traffic hysteresis generated.
@@ -62,5 +61,5 @@ Fortunately, their empirical results suggest that the reaction patterns mainly o
 
 The procedure for numerical simulation is presented in the figure above. Driver behavior is determined in four layers: (i) the proportion of each driver category (OA, ON, OT), (ii) the stage of traffic oscillations (growth or fully-developed), (iii) the probability of reaction patterns (concave, convex, constant, or non-decreasing) that each driver category will adopt, which depends on the development stage of traffic oscillations, and (iv) the response scenario (early or late reaction pattern).
 
-### Reference
+## Reference
 Chen, Danjue, Jorge A. Laval, Soyoung Ahn, and Zuduo Zheng. "Microscopic traffic hysteresis in traffic oscillations: A behavioral perspective." Transportation Research Part B: Methodological 46, no. 10 (2012): 1440-1453.

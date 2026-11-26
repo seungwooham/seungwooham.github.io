@@ -5,8 +5,6 @@ categories: [ML/DL, PyTorch]
 tags: [Korean, einsum, tensor-operations]
 math: true
 ---
-## Einsum 입문하기 (Introduction to Einsum)
-
 오늘은 pytorch 코드를 작성하다보면 종종 마주치는 einsum에 대해 간략히 소개해보려합니다. Einsum은 아인슈타인 표기법(Einstein summation convention)을 이용하여 연산을 수행하는 함수입니다. Pytorch외에 numpy와 tensorflow 코드에서도 유사한 방법으로 사용되어서 알아두면 다른 프레임워크를 사용하실 때에도 두고두고 도움이 됩니다.
 
 우리는 반복적인 연산을 $$\Sigma$$ 표기법을 이용하여 간략히 나타냅니다. Einsum 표기법은 $$\Sigma$$를 이용한 연산 표기와 같은 형태를 갖습니다. 다만 $$\Sigma$$ 기호를 생략한다는 차이가 있습니다.
@@ -137,5 +135,5 @@ print(torch.einsum("ii->i", a))
 print(torch.einsum("ii->", a))
 ```
 
-### 출처
+## 출처
 https://www.youtube.com/watch?v=pkVwUVEHmfI

@@ -1,0 +1,21 @@
+{% comment %}
+  Shadows the theme's empty placeholder. The theme includes this file after its own stylesheet, so these rules win
+  without copying the theme's SCSS entry (Gemfile.lock is not committed, so CI always builds with the newest 7.x theme).
+
+  Type scale for post and page content, with one size per level as in Notion:
+  - body text, lists at every depth and quotes share the theme's body size (1.08rem, 1.03rem on wide screens);
+  - `##` is 1.5x and `###` is 1.25x the body (Notion's H2/H3 ratios; the post title plays Notion's H1);
+    `####` and deeper stay at body size in bold, like bold text in Notion;
+  - image captions and tables use one small size, 0.875x, the same as <small>;
+  - code keeps the theme's 0.85rem (13.6px).
+{% endcomment %}
+<style>
+  .content h2 { font-size: 1.5em; }
+  .content h3 { font-size: 1.25em; }
+  .content h4, .content h5, .content h6 { font-size: 1em; font-weight: 600; }
+  .content a.popup + em,
+  .content .embed-video + em,
+  .content .embed-audio + em,
+  .content .table-wrapper > table th,
+  .content .table-wrapper > table td { font-size: 0.875em; }
+</style>

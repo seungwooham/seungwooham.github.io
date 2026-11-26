@@ -5,8 +5,6 @@ categories: [Paper Review, Graph Neural Network]
 tags: [Korean, MinCutPool, graph-pooling, spectral-clustering]
 math: true
 ---
-## MinCutPool: 이론편1 (MinCutPool: Understanding the Theory 1)
-
 MinCutPool은 복잡한 그래프에서 주요한 node를 추출하고자 한 여러 시도들 중 하나입니다. 일반적으로 node 추출은 graph를 matrix로 표현한 뒤 고유값 분해를 통해 핵심 node를 결정하는 spectral clustering(SC) 방법을 활용합니다. 하지만 고유값 분해 과정의 계산 복잡도가 높아 ($$O(N^3)$$) scalability issue가 있습니다. 최근 gradient descent 알고리즘을 활용하여 복잡도를 $$O(N^2)$$이나 $$O(N)$$까지 줄이는 연구가 있었습니다(Han & Filippone, 2017). 인공신경망을 이용한 연구도 진행되어 Autoencoder를 활용해 Laplacian matrix(Degree matrix - Adjacency matrix)의 i번째 행을 주요한 eigenvector들의 i번째 component에 연결시키는 작업도 이루어졌습니다(Tian et al., 2014). [(Laplacian matrix에 대한 설명은 이 링크를 클릭하세요.)](<https://junklee.tistory.com/112/>)
 
 본 논문에서는 eigenvector를 활용해야 하는 SC의 단점을 해소하면서 graph topology와 node의 feature를 기반으로 node를 clustering하는 방법론을 제시합니다. 이제부터 이론에 대해서 알아봅시다.
@@ -225,7 +223,7 @@ print(-np.trace(np.transpose(s) @ A @ s)/np.trace(np.transpose(s) @ D @ s))
 
 MP operation 자체가 node feature를 uniform하게 하는 경향이 있어 이런 local minima에 갇힐 위험이 더욱 올라갑니다. 이럴 때를 대비해서 orthogonality loss가 존재합니다. 이 orthogonality loss에 대한 자세한 정보는 다음 글에서 확인해보도록 하겠습니다.
 
-### 출처
+## 출처
 - Bianchi, Filippo Maria, Daniele Grattarola, and Cesare Alippi. "Spectral clustering with graph neural networks for graph pooling." In International Conference on Machine Learning, pp. 874-883. PMLR, 2020. <br/>
 - Han, Yufei, and Maurizio Filippone. "Mini-batch spectral clustering." In 2017 International Joint Conference on Neural Networks (IJCNN), pp. 3888-3895. IEEE, 2017. <br/>
 - Tian, Fei, Bin Gao, Qing Cui, Enhong Chen, and Tie-Yan Liu. "Learning deep representations for graph clustering." In Proceedings of the AAAI Conference on Artificial Intelligence, vol. 28, no. 1. 2014. <br/>
