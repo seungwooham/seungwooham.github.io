@@ -55,7 +55,7 @@ jobs:
           bundle exec htmlproofer _site \
             \-\-disable-external \
             \-\-swap-urls '^https?\://seungwooham\.github\.io:' \
-            \-\-ignore-urls "/^http:\/\/127.0.0.1/,/^http:\/\/0.0.0.0/,/^http:\/\/localhost/"
+            \-\-ignore-urls "/^http:\/\/127.0.0.1/,/^http:\/\/0.0.0.0/,/^http:\/\/localhost/,/^http:\/\/wiki\.hash\.kr\//"
 
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v5

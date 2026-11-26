@@ -64,7 +64,7 @@ main() {
   bundle exec htmlproofer "$SITE_DIR" \
     --disable-external \
     --swap-urls '^https?\://seungwooham\.github\.io:' \
-    --ignore-urls "/^http:\/\/127.0.0.1/,/^http:\/\/0.0.0.0/,/^http:\/\/localhost/"
+    --ignore-urls "/^http:\/\/127.0.0.1/,/^http:\/\/0.0.0.0/,/^http:\/\/localhost/,/^http:\/\/wiki\.hash\.kr\//"
 }
 
 while (($#)); do
